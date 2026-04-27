@@ -1,0 +1,28 @@
+/* ---------------------- Estrutura Exercicios ----------------------*/
+.lista_exercicios {
+    list-style-type: none;
+}
+
+.exercicio {
+    margin-top: 8px;
+    transition: 0.2s;
+}
+
+.exercicio:hover {
+    background-color: rgba(32, 37, 33, 0.185);
+}
+
+.link_exercicio {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+}
+
+
+.texto_exercicio {
+    margin-left: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+/* ---------------------- Estrutura Exercicios ----------------------*/

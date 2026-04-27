@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <link href="/web/assets/img/Python-logo-notext.svg.png" rel="icon">
+        <link rel="stylesheet" href="/web/styles/estrutura_base_anotacoes_projetos.css">
+        <link rel="stylesheet" href="/web/styles/font_py.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content ="width=device-width, initial-scale= 1.0"> 
+        <title>Estudos Python</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <header id="menu_estudos">
+            <div class="head1">
+                <div>
+                    <a href="/web/index.html" target="_self">
+                        <img src="/web/assets/img/Program_icon.png" alt="estudo_programacao" class="logo_program">
+                    </a>
+                   
+                </div>
+                <div class="titulo_site">
+                    <h1>Estudos Python</h1>
+                </div>
+                <div class="align_right"></div>
+            
+            </div>
+            <nav id="linguagens">
+                <ul class="cab_ling">
+                    <li class="linguagem">
+                        <a href="/web/pages/html/" target="_self">
+                            <img src="/web/assets/img/HTML5_logo_and_wordmark.svg.png" alt="logo_html" class="logo_ling">
+                        </a>
+                    </li>
+                    <li class="linguagem">
+                        <a href="/web/pages/css/" target="_self">
+                            <img src="/web/assets/img/CSS3_logo.svg.png" alt="log_css" class="logo_ling">
+                        </a>
+                    </li>
+                    <li class="linguagem">
+                        <a href="/web/pages/python/" target="_self">
+                            <img src="/web/assets/img/Python-logo-notext.svg.png" alt="logo_py" class="logo_ling">
+                        </a>
+                    </li>
+                    <li class="linguagem">
+                        <a href="/web/pages/git/" target="_self">
+                            <img src="/web/assets/img/git-icon-logo.svg" alt="logo_git" class="logo_ling">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </header>
+            <nav id="cab_aux">
+                <ul class="atalhos_aux">
+                    <li class="item_auxiliar">
+                        <a href="https://www.udemy.com/course/python-3-do-zero-ao-avancado/" target="_blank">
+                            <img src="/web/assets/img/udemy-3.svg" alt="logo_udemy" class="logo_aux">
+                        </a>
+                    </li>
+                    <li class="item_auxiliar">
+                        <a href="https://docs.python.org/pt-br/3/library/stdtypes.html" target="_blank">
+                            <img src="/web/assets/img/Python-logo-notext.svg.png" alt="logo_py" class="logo_aux">
+                        </a>
+                    </li>        
+                </ul>
+            </nav>
+        <section>
+            
+            <div class="secao">
+                <div class="top_align">
+                <h2>Anotações</h2>
+                <h3 class="topico">funções</h3>
+                <p>
+                    <b class="sub_top">'#'</b> Serquilha, utilizado para comentar a linha do cod. <br>
+                    <b class="sub_top">'''-''' e """-"""</b>Aspas simples e aspas dessa forma podem ser utilizadas como caixa de comentrário (Docstring), funcionam em mais de uma linha de uma vez.<br>
+                    
+                    
+                    <b class="sub_top">print</b> A função print, utilizamos para imprimir algo na tela, seja uma variavel, uma string, um numero, algum objeto do py<br>
+                </p>
+                        <ul>
+                            <li>Sep - dentro do print, serve para definir um caracter de separação - Ex: print(arg1,arg2,arg3) sem o sep, teremos o seguinte resultado: arg1 arg2 arg3<br>
+                            Caso tenha o o sep no print: print(arg1,arg2,arg3, sep='-'), teremos o seuinte resultado: arg1-arg2-arg3</li>
+                            <li>end='' - dentro do print ele define qual será o final do print, todo print ele ja tem como final um "enter", se definirmos com o end ele não dará o enter e colocará o caracter selecionado<br>
+                            <b>Exemplo: sem end</b><br>
+                            print(arg1)<br>
+                            print(arg2)<br>
+                            <b>Resultado:</b><br>
+                            arg1<br>
+                            arg2<br>
+                            <br>
+                            <b>Exemplo: com end</b><br>
+                            print(arg1,end='-')
+                            print(arg2)<br>
+                            <b>Resultado:</b><br>
+                            arg1-arg2                                      
+                            </li>
+                            <li><b>\</b> utilizado para escapar algo dentro de um texto, por exemplo se queremos colocar algo entre "" dentro deuma string, quando colocamos entr \\, o py vai entender que faz parte do texto e não vai considerar a "" como final da primeira string </li>
+                        </ul>
+                <p>            
+                    <b class="sub_top">str int float bool</b> São formatos do py, str é para texto, int é para numeros inteiros, float são para numeros decimais e bool para formato booleano, os comandos podem ser utilizados para conversão tbm <br>
+                    <b class="sub_top">type</b> type te devole o formato atual do objeto<br>
+                    <b class="sub_top">input</b> Utilizado para inputar informações em variaveis ou em objetos no cod<br>
+                    <b class="sub_top">if, elif e else</b> Uma das funções mais utilizadas, a função que nos move durante o cod, igual o se do excel<br>
+                    <b class="sub_top">id</b> O id mostra pra gente a identidade do objeto dentro da memoria do py<br>
+                    <b class="sub_top">isdigit</b> Função pra verificar se a string é numero<br>
+                    <b class="sub_top">try e except</b> Função parecido com If, porém o try, ele tenta executar o cod ou algoritmo, caso haja algum erro, ele joga o cod direto no except.<br>
+                    <b class="sub_top">pass</b> Função para ignorar a condição, por exemplo, vc não coda entre os blocos if ou try, se você colocar o pass, ele ignora o erro e continua o cod. <br>
+                    <b class="sub_top">documentação:</b> https://docs.python.org/pt-br/3/library/stdtypes.html<br>
+                    <b class="sub_top">Dados imutaveis</b> str, int, float, bool. São objetos imutaiveis no python, caso eu queira mudar, eu tenho que montar outra variavel<br>
+                    <b class="sub_top">while</b> função que se repete dentro do codigo a não ser que tenha uma saida. Por exemplo um <b class="sub_top">break</b> ou uma variavel alterada que te tira do while<br>
+                    <b class="sub_top">.lower:</b> converte a str para letra minuscula<br>
+                    <b class="sub_top">.startswith</b> Verifica a inicial da str<br>
+                    <b class="sub_top">.endwith</b> Verifica o final da str<br>
+                    <b class="sub_top">and</b> Mesma logica da porta and, compara duas variaveis,a função só se torna verdadeira caso as duas sejam verdadeiras, pode ser mais de duas. <br> 
+                    <b class="sub_top">or</b> Mesma logica da porta or, compara duas variaveis ou mais, caso qualquer uma seja verdadeira, a função se torna verdadeira.<br>
+                    <b class="sub_top">not</b> Mesma lógica da porta not, ele inverte a função, se a função procura algo verdadeiro o not procura algo falso.<br>
+                    <b class="sub_top">.isdigit()</b> Utilizado para verificar se a entrada é um numero ou não.<br>
+                    <b class="sub_top">len()</b> Utilizado para convertar str em numero, ele conta a quantidade de caracteres que tem uma str.<br>
+                    <b class="sub_top">int()</b> Converte a entrada de str para numero, caso não for numero ele retorna erro. <br>
+                    <b class="sub_top">for: </b>Funçao em loop, utilizada assim como o while, porém com ele utilizase de forma mais precisa, o while, ele funciona só enquanto função bool vinculada a ele for True. <br>
+                    <b class="sub_top">Range(start, stop, step) </b>Utiliza-se para criar uma distancia a ser percorrida, dentro dos () podemos definir onde ele vai começar, onde vai parar e de quanto em quanto ele vai operar. <br>
+                    <b class="sub_top">[] - lista</b> Utiliza-se para listas, listas são mutaveis dentro do py, Criar, deleter, alterar itens de dentro dela.<br>
+                    <b class="sub_top">.append()</b> Utilizado para adicionar itens na lista.<br>
+                    <b class="sub_top">.pop()</b> Remove o ultimo valor da lista. Pode ser inserido dentro de uma variavel para mostar qual item foi removido. Exemplo lista [0,1,2,3] Variavel - item_removido = lista.pop() - essa variavel vai tirar o ultimo item da lista no caso o 3 e a variavel item_removida é igual a 3<br>
+                    <b class="sub_top">del</b> Utilzado para remover um determinado item da lista<br>
+                    <b class="sub_top">clear</b> Utilizado para limpar a lista<br>
+                    <b class="sub_top">insert </b>Utilizado para inserir um item na lista no inicio da lista, utilizado em listas pequenas, não recomendado em listas grandes, pois ele sempre vai empurrar os outros items para frente na lista, assim processando mais energia<br>
+                    <b class="sub_top"></b><br>
+                    
+                    <!-- <b class="sub_top"></b><br> -->
+
+
+
+                </p>    
+                <h3 class="topico"> Operadores</h3>
+                <p>
+                    Operadores são funções dentro do py, que fazem com que manipulemos os objetos dentro do cod. Alguns deles tem niveis de força dentro do cod. O py, sempre vai executar o cod de cima pra baixo, da direita pra esquerda, os operadores nos ajudam a a decidir o que vai ser execudo primeiro dentro da linha do cod. Por exemplo:<br>
+                    print(arg1+arg2*(arg1+arg2)) - aqui o parenteses será executado primeir, depois a multiplicação e depois a soma na linha cod.<br>
+                    
+                    
+                    <b class="sub_top">()<sup>niv1</sup></b><br>
+                    <b class="sub_top">**<sup>niv2</sup></b><br>
+                    <b class="sub_top">% <sup>nv3</sup></b> modulo - utilizado em contas para mostrar a sobra de uma divisão<br>
+                    <b class="sub_top">*<sup>nv3</sup></b>multiplicação<br>
+                    <b class="sub_top">/<sup>nv3</sup></b>divisão<br>
+                    <b class="sub_top">//<sup>nv3</sup></b>divisão inteira<br>
+                    <b class="sub_top">+<sup>nv4</sup></b> adição ou concatenação<br>
+                    <b class="sub_top">-<sup>nv4</sup></b> subtração<br>
+                </p>
+
+                    
+                <h3 class="topico"> Interpolarização de str <b class="sub_top">%</b></h3>
+                <p>Interpoolarização são formas de converter str, é utilizada em codigos antigos, o PY 3.6 utiliza mais o <b class="sub_top">(f'')</b>, utilizamos também para tratar o dado.</p>   
+                
+                <p>
+                    <b class="sub_top">s</b> Converte para str<br>
+                    <b class="sub_top">d e i</b> Converte pra inteiro<br>
+                    <b class="sub_top">f</b> Converte para float.<br>
+                    <b class="sub_top">x e X</b> Converte para Hexadecimal.<br>
+                </p>
+                    
+                    
+                <h3 class="topico">Indice</h3>
+                    <p>Indices, utilizamos para pegar um dado especifico de uma inforção, sendo uma STR. Com o indice conseguimos, fatiar strs e exibir só o necessário.<br>
+                        
+                        <b class="sub_top">Exemplo:</b>
+                    </p>
+                    <pre><code>
+                        nome = input('Digite seu nome: ')
+                        data_n = input('Digite sua data de nascimento: ')
+
+                        concat = nome + data_n
+
+                        print(
+                            f'Seu nome é "{concat[:len(nome)]}"
+                            e nasceu em "{concat[len(nome):]}"'
+                        )
+
+                    </code></pre>
+                    <p>
+                        <b class="sub_top">Observação:</b> Aqui utilizamos imputs para informações, a variavel concat pra juntar todas as infos fornecidas e depois utilizamos interpolarização pelo f'', para fatiarmos a str. percebe-se que o fatiamento é feito dentro da função "[]". Desta forma: <b class="sub_top">[inicio da str: até onde vai]</b> Espaços vazios definem como 0. Ou seja no trecho do cod, "[:len(nome)] ele conta quantas letras tem o imput nome inserido e o converte em numero, assim vai contar do 0 até a quandidade de caracteres existentes em nome."
+                    </p>
+                    
+                    
+
+
+                <h3 class="topico"> Contadores Arietimeticos </h3>
+                    <p> Contadores aritimeticos são utlizados para acumular ou contar valores.<br>
+                    
+                    <b>Operadores de atribuição</b><br>
+                    Os operadores sempre vão fazer a função deles<br>
+                    <b class="sub_top">Exemplo:</b> variavel = 10, variavel += 4, teremos o valor 14. Isso ocorreu por conta do acumulo aritimetico (10+4). Essas funções são muito utilizadas em laço pra agregar valor a uma variavel ou mais.<br>
+                    
+                    <b class="sub_top">=</b> Atribui um valor a uma variavel<br>
+                    <b class="sub_top">+=</b> Soma valores, ou concatena (em casos de string)<br>
+                    <b class="sub_top">*=</b> Multiplica valores.<br>
+                    <b class="sub_top">/=</b> Divive o valor, converte o item para float.<br>
+                    <b class="sub_top">//=</b> Divide o valor, e tras o valor inteiro, exemplo: 10 // 4 traria um 2.<br>
+                    <b class="sub_top">**= </b><br> Exponencia o valor. <br> 
+                    <b class="sub_top">%=</b> Traz a sobra de uma divisão<br>
+                    
+                    </p>
+                
+            </div>
+        </div>
+        </section>
+        <section>
+            <div class="secao">
+                <div class="top_align">
+                <h2> Exercicios </h2>
+                
+                <h3 class="topico"> Calculardora de IMC </h3>
+                    <div>
+                    <p>
+                        Realizado um programa que questiona, seu nome, idade, peso e altura e emite seu imc.</p>
+                    <pre><code>
+                        nome = input("Qual o seu nome? ")
+                        idade = input("Qual sua idade? ")
+                        altura = input("qual sua altura? ")
+                        peso = input('Qual o seu peso? ')
+                        imc = float(peso) / float(altura)**2
+
+
+
+                        print(
+                            f'Olá {nome}, tudo bem? Sua idade é {int(idade)},
+                             sua altura é {float(altura)} e seu peso {float(peso)}.')
+                        print(f"calculamos o seu imc e o mesmo é... {imc:.2f}")
+                    </code></pre>
+                    <p><b>Observação:</b> Aqui utilizamos as variais, a função imput para colocar os dados no programa, o print pra exibir os resultados e a função float, que converte o peso e a altura de strings para numeros flutantes, para conseguirmos efetuar o calculo</p>
+                    </div>
+                
+                <h3 class="topico"> Programa de entrada e saida </h3>
+                    <div>
+                    <p> Realizado um programa para entrada e saida com uma senha fixa definida. Programa basico de entrada, aprimoração: branco de dado para senhas alteraveis</p>
+                    <pre><code>
+                        entrada = input('Entrar no programa? S/N: ')
+                        senha_permitida = "080500"
+                        senha = ""
+
+                        if entrada == 'S' or entrada == 's':
+                            print('para entrar digite a senha...')
+                            senha = input('Senha: ')
+                            entrada = True
+                        else:
+                            print("perfeito, volte mais tarde! :)")
+
+
+                        if entrada == True and senha == senha_permitida:
+                            print('Você entrou no programa')
+                        else: 
+                            print("você não entrou")
+
+
+                    </code></pre>
+                    <p><b>Observação: </b>Aqui foram utilizados imputs e uma variavel de senha fixa permitida, caso a pessoa digite s no imput de entrada, ela entra no programa depois que digitar a senha.</p>
+                    </div>
+                
+                <h3 class="topico">Comparador de valores - Dois valores </h3>
+                    <div>
+                    <p>Compara dois valores, verifica se é igual, menor ou maior e traz a resposta</p>
+                    <pre><code>
+                        val1 = input('Entre com o primeiro valor: ')
+                        val2 = input('Entre com o segundo valor: ')
+
+                        cond_igual = False
+                        cond_maior = False
+                        cond_menor = False
+
+
+                        if val1 == val2:
+                            cond_igual = True
+                        elif val1 > val2:
+                            cond_maior = True
+                        elif val1 < val2:
+                            cond_menor = True
+
+                        else:
+                            print("não sei como chegamos aqui.")
+
+                        if cond_igual == True:
+                            print(f'V1 ({val1}) é igual ao V2({val2})')
+                        elif cond_maior == True:
+                            print(f'V1 ({val1}) é maior ao V2({val2})')
+                        elif cond_menor == True:
+                            print(f'V2 ({val2}) é maior ao V1({val1})')
+
+                        else:
+                            print('Cara tem uma coisa muito errada....')
+                    </code></pre>
+                    <p><b>Observação:</b> Foi utilizado IF para converter a variavel da comparação, todas as variaveis entraram como falsas, quando o programa indica as caracteristicas dos valores, entra no segundo if mostrando conforme comparação validada.</p>
+                    </div>
+                    
+                <h3 class="topico">Programa de entrada e saida com while</h3>
+                    <div>
+                    <p>Mesma coisa do programa de entrada e saida anterior, porém esse utilizamos o while, para nos mantermos dentro do log de entrada até a senha correta ser inserida ou o usuario utilizar a função sair.</p>
+                    <pre><code>
+                        condicao = True
+                        nome = None
+                        entrada = None
+                        senha_permitida= "080500"
+                        senha = None
+
+                        while condicao:
+                            nome = input('Nome: ')
+                            entrada = input(f'Olá {nome},
+                             você gostaria de entrar no programa? S/N: ')
+
+                            if entrada == 'S' or entrada == 's':
+                                senha = input(f'{nome}, digite a senha de cadastro: ') 
+
+                                if senha == senha_permitida:
+                                    print(f'Olá {nome}, você entrou no programa,
+                                     seja bem vindo!!')
+
+                                else:
+                                    print(f'Desculpa {nome},
+                                     você digitou uma senha incorreta!!!')
+
+                            elif entrada == 'N' or entrada == 'n':
+                                print(f'Você não entrou')
+                                condicao = False
+
+
+                            else:
+                                print(f'Desculpe {nome},
+                                 você não digitou uma opção valida!!')
+                    </code></pre>
+                    <p><b>Observação: </b>Foram definidas variações que seriam atualizadas durante o programa. Enquanto a variavel condição for "true" o while continuara sendo executado. Temos o IF que te questiona se quer ou não acessar o programa, caso você digite tanto o S maiusculo como o s minusculo você pode entrar no programa. A unica variavel definida antes do while foi a senha permitida.</p>
+                    </div>
+                
+                <h3 class="topico">Calculadora basica (2 entradas)</h3>
+                    <div>
+                        <p>Calculadora de operações simples como +, -, / ou *. Entrada de dois numeros e IFs para entrar nas operações.</p>
+                        <pre><code>
+                            print("Olá, seja bem vindo a calculadora teste de dois digitos!!!")
+
+                            n1 = input("Entre com o primeiro numero da Operação: ")
+                            select_operation = input('Escolha entra as operações: +, -, / ou *: ')
+                            n2 = input("Entre com o segundo numero da Operação: ")
+
+                            if select_operation =="+":
+                                print(int(n1)+int(n2))
+                            elif select_operation =="-":
+                                print(int(n1)-int(n2))
+                            elif select_operation =="/":
+                                print(int(n1)/int(n2))
+                            elif select_operation =="*":
+                                print(int(n1)*int(n2))
+                            else:
+                                print("voce não escolheu uma operacao valida")
+
+                        </code></pre>
+                        <p><b>Observação: </b>Nessa calculadora, temos duas entradas n1 e n2, você primeiro escolhe o n1, operação simples e n2. O cod entra no IF, fara a operação escolhida e mostrar o resultado, caso a operação escolhida seja invalida. Else apresenta valor de Erro.</p>
+                    </div>
+
+                <h3 class="topico">Exercicio de Inidices - trabalhando com letras</h3>
+                    <div>
+                        <p>Programa com entrada de nome e data de nascimento, interte o nome, fala se contem espaços, numero de letras.<br>
+                        <b>Version with "or":</b></p>
+                        <pre><code>
+                            nome_usuario = input('Diga seu nome: ')
+                            idade_usuario = input('Diga sua idade: ')
+
+                            if nome_usuario =='' or idade_usuario == '':
+                                print('Você não informou os dados necessários')
+
+                            else:
+                                print(f'Olá caro usuario, seu nome é {nome_usuario}')
+                                print(f'Seu nome invertido ficaria {nome_usuario[::-1]}')
+
+                                if ' ' in nome_usuario:
+                                    print(f'Seu nome tem espaços')
+
+                                else:
+                                    print('Seu nome não tem espaços')
+
+                                if ' ' in nome_usuario:
+                                    qte_espacos = nome_usuario.count(' ')
+                                    print(f'Seu nome tem {len(nome_usuario)} Caracteres e
+                                    {(len(nome_usuario))-qte_espacos} letras')
+                                    print(f'A primeira letra do seu none é \'{nome_usuario[0]}\'')
+                                    print(f'A ultima letra do seu nome é \'{nome_usuario[-1]}\'')
+                                else:
+
+                                    print(f'Seu nome tem {len(nome_usuario)} Letras')
+                                    print(f'A primeira letra do seu none é \'{nome_usuario[0]}\'')
+                                    print(f'A ultima letra do seu nome é \'{nome_usuario[-1]}\'')
+
+                        </code></pre>
+                        <p><b>Version with "and" - Teacher version's:</b></p>
+                        <pre><code>
+                            nome = input('Digite seu nome: ')
+                            idade = input('Digite sua idade:')
+
+                            if nome and idade:
+                                print(f'Ola, seu nome é {nome}')
+                                print(f'Seu nome invertido fica {nome[::-1]}')
+
+                                if ' ' in nome:
+                                    print(f'Seu nome tem espaços')
+                                    qte_espaco = nome.count(' ')
+                                    print(f'seu nome tem {len(nome)} caracteres e 
+                                        {(len(nome)-qte_espaco)} Letras')
+                                else:
+                                    print(f'Seu nome não tem espaçoes')
+                                    print(f'Seu nome tem {len(nome)} Letras')
+                                
+                                print(f'A primeira letra do seu nome é \'{nome[0]}\'')
+                                print(f'A ultima letra do seu nome é \'{nome[-1]}\'')
+                            else:
+                                print(f'Desculpe, você não digitou as infos necessárias')
+
+                        </code></pre>
+                        <p><b>Observação:</b> Neste programa de duas entradas, foi utilizado somente o nome para conversões de fatiamentes de str. Foi utilizado a função "ou" para verificar se as entradas foram preenchidas. Caso não, ele retorna que não ouve entrada, ele informa se o nome da pessoas tem espaços, faz a contagem de letras com a função len, e faz as inverções e fatiamentos com o indice <b>[::]</b> </p>
+                    </div>
+                
+                <h3 class="topico">Mutação de str - iteração</h3>
+                    <div>
+                        <p>O prgrama pega a str inputada e fatia letra por letra e faz uma nova str adicionando "*" entre as letras.</p>
+                        <pre><code>
+                            nome = input('Digite seu nome: ')
+                            contlet = len(nome)
+                            interacao = 0
+                            newname = '*'
+
+
+                            while interacao < contlet:
+                                let = f'{nome[interacao]}*'
+                                newname += let
+                                
+                                print(newname)
+                                interacao += 1
+                            
+                                
+                            
+                            print('acabou')
+                        </code></pre>
+                        <p><b>Observação: </b>Utilizado while, interação e contadores aritimeticos, o programa consiste em um input onde você adiciona uma STR ao programa, a variavel contagem de letras vai definir o tanto de vezes que vai rodar o while (trazendo o valor de caracteres dentro da str). Enquanto o while estiver rodando, ele vai passar por cada caractere da str e vai adicionalo a uma nova variavel com um * nominada como newname. Assim, no final teremos a str com os caracteres inseridos entre *.</p>
+                    </div>
+                    
+                <h3 class="topico">>Contador de caracteres (STR)</h3>
+                    <div>
+                    <p> Faz a contagem de caracteres especificos dentro de str, utilizando while, else e indice com contador Arietimeticos.</p>
+                    <pre><code>
+                        string = input('cole algum texto para contarmos caracteres especificos: ')
+                        caractere = input('Escolha o caractere que deseja contar: ')
+                        i = 0
+                        cont_let = 0
+
+
+                        while i &lt; len(string):
+                            letra = string[i]
+
+                            if letra == caractere:
+                                cont_let +=1
+
+                            i +=1
+                        else:
+                            print(f'No texto colado, contamos todos os "{caractere}",
+                             e tivemos o resultado de {cont_let} "{caractere}"s.')
+                    </code></pre>
+                    <p><b>Observação:</b> Programa, recebe um input de texto e um input do caracter especifico que será contado quantas vezes aparece dentro do texto. Foi utilizado o <b>len()</b>, para a contagem de caracteres dentro da str. o While para o loop de evolução do indice <b>i</b>. Toda vez que o indice for o caractere selecionado, ele vai somar o contador de letra.</p>
+                    </div>
+                    
+                <h3 class="topico">Calculador de caracteres STR (Devolve a letra que mais aparece no texto, tirando os espaços)</h3>
+                    <div>
+                    <p>Calcula a quantidade de todos os caracteres, e mostra o caractere que mais foi mencionado no texto.</p>
+                    <pre><code>
+                        frase = input('Digite uma frase: ')
+
+                        i = 0
+                        qte_vezes_mencionada = 0
+                        let_mais_mencionada = ''
+                        qte_letra_mais_mencionada = 0
+
+
+                        while i &lt; len(frase):
+                            letra_atual = frase[i]
+                            qte_vezes_mencionada = frase.count(letra_atual)
+
+                            if letra_atual != ' ':
+                                continue
+
+                            if qte_letra_mais_mencionada &lt; qte_vezes_mencionada:
+                                qte_letra_mais_mencionada = qte_vezes_mencionada
+                                let_mais_mencionada = letra_atual
+
+                            i += 1
+
+                        print(f'Do texto que você digitou,
+                         a letra que mais aparece é "{let_mais_mencionada}"
+                          que apareceu {qte_letra_mais_mencionada}x')
+
+                    </code></pre>
+                    <p><b>Observação: </b> Tem a mesma lógica do contador anterior, porém esse utiliza a memória do programa, efetua o calculo da quantidade de cada caracter no texto, e adiciona o caracter que mais teve menções dentro dele, subsituindo na memoria somente quando houver outro caractere que passar pelo indice que apareceu mais vezes que o anterior.</p>
+                    </div>
+                
+                <h3 class="topico">Calculadora - com while, soma de operações e funcionalidades extras.</h3>
+                    <div>
+                    <p>Caluladora mais complexa que a anterior, quando você começa um calculo ela vai somando o calculo até você dizer para ela parar.<br>
+                    <b>Versão codada por min:</b></p>
+                    <pre><code>
+                        print ('fala man, bora calcular! Para sair digite "sair"')
+                        numero1 = input('Digite um numero: ')
+                        operacao = None
+                        ops = 0
+                        numero2 = ''
+
+                        while not operacao == 'sair':
+                            
+
+                            try:
+                                int(numero1)
+                                operacao = input('informe a operacao desejada: ')
+                                if operacao == '+':
+                                    ops += 1
+                                    numero2 = input(f'Digite o Segundo numero da {ops}º Operação: ')
+                                        
+                                    try:
+                                        int(numero2)
+                                        numero1 = int(numero1) + int(numero2)
+                                    except:
+                                        ops -= 1
+                                        print(f'{numero2} não é um numero!!')
+
+                                elif operacao == "-":
+                                    ops += 1
+                                    numero2 = input(f'Digite o Segundo numero da {ops}º Operação: ')
+                                    try:
+                                        int(numero2)
+                                        numero1 = int(numero1) - int(numero2)
+                                    except:
+                                        ops -= 1
+                                        print(f'{numero2} não é um numero!!')
+
+                                elif operacao == "/":
+                                    ops += 1
+                                    numero2 = input(f'Digite o Segundo numero da {ops}º Operação: ')
+                                    try:
+                                        int(numero2)
+                                        numero1 = int(numero1) / int(numero2)
+                                    except:
+                                        ops -= 1
+                                        print(f'{numero2} não é um numero!!')
+
+                                elif operacao == "*":
+                                    ops += 1
+                                    numero2 = input(f'Digite o Segundo numero da {ops}º Operação: ')
+                                    try:
+                                        int(numero2)
+                                        numero1 = int(numero1) * int(numero2)
+                                    except:
+                                        ops -= 1
+                                        print(f'{numero2} não é um numero!!')
+
+                                elif operacao == "c":
+                                    ops = 0
+
+                                elif operacao == 'sair':
+                                    break
+                                    
+
+                                else:
+                                    operacao = 'erro'
+                            
+                            except:
+                                print(f'{numero1} não é um número')
+                                numero1 = input('digite um numero valido: ')
+
+                            if operacao =="c":
+                                numero1 = input('Vamos começar um novo calculo, digite o primeiro numero: ')
+                            
+                            elif operacao != 'erro':
+                                print(f'Resultado da {ops}º é: {numero1}')
+
+                            else:
+                                print('operacao invalida')
+
+
+                        print('Voce saiu')
+
+                    </code></pre>
+                    <p><b>Observação:</b> Foram utilizadas variaveis para contar a quantidade de operações, utilizado try para tentar converter as entradas em numeros, caso o try falhe, ele nos sinaliza para inserir um numero valido. Caso a operação for valida, o programa contabiliza a quantidade de operações. Caso não ele não faz a contagem. Adicionado também uma função de zerar a operação, para começarmos outro calculo sem sair do programa.</p>
+                    
+                    <p><b>Versão do chat gpt, revisada:</b></p>
+                    <pre><code>
+                        print('Fala man, bora calcular! Para sair digite "sair"')
+
+                        numero1 = input('Digite o primeiro número: ')
+                        ops = 0
+
+                        while True:
+                            try:
+                                int(numero1)
+                            except:
+                                print(f'{numero1} não é um número!')
+                                numero1 = input('Digite um número válido: ')
+                                continue
+
+                            operacao = input('Informe a operação (+, -, *, /, c para reset,
+                                             sair para encerrar): ')
+
+                            if operacao == "sair":
+                                break
+                            elif operacao == "c":
+                                ops = 0
+                                numero1 = input("Novo cálculo! Digite o primeiro número: ")
+                                continue
+                            elif operacao in ["+", "-", "*", "/"]:
+                                numero2 = input(f'Digite o segundo número da {ops+1}ª operação: ')
+                                try:
+                                    int(numero2)
+                                    if operacao == "+":
+                                        numero1 = int(numero1) + int(numero2)
+                                    elif operacao == "-":
+                                        numero1 = int(numero1) - int(numero2)
+                                    elif operacao == "*":
+                                        numero1 = int(numero1) * int(numero2)
+                                    elif operacao == "/":
+                                        numero1 = int(numero1) / int(numero2)
+                                    ops += 1
+                                    print(f"Resultado da {ops}ª operação: {numero1}")
+                                except:
+                                    print(f'{numero2} não é um número!')
+                            else:
+                                print("Operação inválida!")
+
+                        print("Você saiu da calculadora.")
+
+                    </code></pre>
+                    <p><b>Observação:</b> Comparado com o algoritmo codado por mim, a versão do GPT unifica as operações dentro do if, não sendo necessário um if pra cada operação.</p>
+                    </div>
+                
+                <h3 class="topico">Comparador de valores - Dois valores </h3>
+                    <div>
+                    <p>Compara dois valores, verifica se é igual, menor ou maior e traz a resposta</p>
+                    <pre><code>
+                        val1 = input('Entre com o primeiro valor: ')
+                        val2 = input('Entre com o segundo valor: ')
+
+                        cond_igual = False
+                        cond_maior = False
+                        cond_menor = False
+
+
+                        if val1 == val2:
+                            cond_igual = True
+                        elif val1 > val2:
+                            cond_maior = True
+                        elif val1 < val2:
+                            cond_menor = True
+
+                        else:
+                            print("não sei como chegamos aqui.")
+
+                        if cond_igual == True:
+                            print(f'V1 ({val1}) é igual ao V2({val2})')
+                        elif cond_maior == True:
+                            print(f'V1 ({val1}) é maior ao V2({val2})')
+                        elif cond_menor == True:
+                            print(f'V2 ({val2}) é maior ao V1({val1})')
+
+                        else:
+                            print('Cara tem uma coisa muito errada....')
+
+                    </code></pre>
+                    <p><b>Observação:</b> Foi utilizado IF para converter a variavel da comparação, todas as variaveis entraram como falsas, quando o programa indica as caracteristicas dos valores, entra no segundo if mostrando conforme comparação validada.</p>
+                    </div>
+                
+                
+                <h3 class="topico">Programa de entrada e saida - validação de senha e usuario - cadastro e limite de tentativas.</h3>    
+                    <div>
+                        <p>Programa de entrada e saida, com função de entrada e saida, cadastro de login, cadastro de senha e contagem de tentativas. </p>
+                        <pre><code>
+                            entrada_programa = None 
+                            login_entrada = None
+                            dentro_programa = None
+                            login_cadastrado = None
+                            senha_cadastrada = None
+                            cadastrar = None
+                            recusa_cadastro = None
+                            senha_entrar = None
+                            fase_login = None
+                            entrada_login = True
+                            conf_cad = None
+                            fase_senha = None
+                            tentativa_senha = None
+                            msg_final = None
+
+                            while entrada_login == True:
+                                entrada_programa = input('Olá, este é um progranda,
+                                                         gostaria de entrar? S/N: ')
+                            
+                                if entrada_programa.lower() == "s":
+                                    fase_login = True
+
+                                    while fase_login == True and dentro_programa == None:
+                                        conf_cad = input('Você tem cadastro? S/N: ')
+
+                                        if conf_cad.lower() == "s":
+                                            login_entrada = input(
+                                                                'Perfeito, digite seu login: '
+                                                                )
+
+
+                                            if login_entrada == login_cadastrado:
+                                                print('Login correto')
+                                                fase_senha = True
+                                                tentativa_senha = 3
+
+                                                while fase_senha == True and tentativa_senha > 0:
+                                                    senha_entrar = input(
+                                                                    f'Ola {login_entrada},
+                                                                    digite sua senha cadastrada: '
+                                                                    )
+
+                                                    if senha_entrar == senha_cadastrada:              
+                                                        dentro_programa = True
+                                                        msg_final = "Você entrou no programa"
+                                                        break
+
+
+                                                    else:
+                                                        tentativa_senha -= 1
+                                                        print(
+                                                            f'Senha incorreta,
+                                                             numero de tentativas restantes:
+                                                              {tentativa_senha}'
+                                                              )
+                                                        msg_final = "Exceto de tentativas excedidas,
+                                                         voltando para login"
+
+                                                print(msg_final)
+
+                                            else:
+                                                print('Login invalido, tente novamente ou cadastre.')
+                                                
+                                        
+                                        elif conf_cad.lower() == "n":
+                                            cadastrar = input(
+                                                        "gostaria de se cadastrar no programa? S/N: "
+                                                        )
+
+                                            if cadastrar.lower() == "s":
+                                                login_entrada = input(
+                                                        'Digite um login para utilização do programa: '
+                                                        )
+
+                                                if login_entrada == login_cadastrado:
+                                                    print(f' login de entrada "{login_entrada}" 
+                                                    já existente')
+                                                
+                                                else:
+                                                    login_cadastrado = login_entrada
+                                                    senha_cadastrada = input('Cadastre uma senha: ')
+                                                    print('Cadastro realizado com sucesso')
+                                            else:
+                                                print('perfeito, até outra hora')
+                                                dentro_programa = False
+
+                                        
+                                        else:
+                                            print('Você digitou uma opção invalida')
+                                
+                                    break
+
+
+                                elif entrada_programa.lower() == "n":
+                                    print('Pefeito, volte mais tarde!')
+                                    entrada_login = False
+
+                                else:
+                                    print("Você não digitou nenhuma função valida")
+
+                        </code></pre>
+                        <p><b>Observação: </b> Programa com laços de while e validações com if e else, todas as entradas foram convertidas para lower para não ter divergencia de entrada, validação de entradas invalidas caso não forem as entradas permitidas no programa. </p>
+                        <p><b>Dificuldades: </b>Durante a codagem, fui criando as variaveis fora do while para me organizar, tive um feedback de que as variaveis fora do while não seriam necessárias. Pontos de melhoria - limpeza de cod, organizção de variaveis.</p>
+                    </div>
+                
+                
+                <h3 class="topico">Jogo da Forca - while para o fluxo do game e for para estado da palavra</h3>
+                    <div>
+                        <p>Utilizado sistema de repetição de letras, as letras repetidas não configuram erro, controle de tentativas de erros e acertos, amostragem de letras incorretas.</p>
+                        <pre><code>
+                            import os
+                            jogando = True
+
+                            while jogando == True:
+                                palavra_secreta = input('Ola jogador, vamos jogar forca, 
+                                                            digite uma palavra: ')
+                                conversao = len(palavra_secreta)*'*'
+                                palavra_formatada = conversao
+                                tentativas_acerto = 0
+                                tentativas_erro = 0
+                                palavra_secreta = palavra_secreta.lower()
+                                letras_acertadas = ''
+                                letras_erradas = ''
+                                formatacao_erro = ''
+
+                                while palavra_formatada != palavra_secreta and tentativas_erro <= 6:
+                                    entrada_letra = input('Digite apenas uma letra: ')
+                                    entrada_letra = entrada_letra.lower()
+
+                                    if len(entrada_letra) > 1:
+                                        print('Você digitou mais de uma letra!!')
+                                        continue
+
+                                    if entrada_letra in palavra_secreta:
+                                        if entrada_letra in letras_acertadas:
+                                            print('Você ja digitou essa letra anteriormente!!')
+                                            continue
+
+                                        letras_acertadas += entrada_letra
+                                        palavra_formatada = ""
+                                        tentativas_acerto += 1
+
+                                        
+
+                                        for letra in palavra_secreta:
+                                            if letra in letras_acertadas:
+                                                palavra_formatada += letra
+                                            else:
+                                                palavra_formatada += '*'
+                                        print(palavra_formatada)
+                                        
+                                    
+                                    else:
+                                        if entrada_letra in letras_erradas:
+                                            print('Você ja digitou essa letra anteriormente!!')
+                                            continue
+                                        tentativas_erro +=1
+                                        letras_erradas += entrada_letra
+                                        formatacao_erro += entrada_letra + '-'
+
+                                        
+                                        
+
+                                        
+                                        if tentativas_erro == 1:
+                                        print(' | ')
+                                        print(' O ')
+                                        print(palavra_formatada)
+                                        print(f'letras erradas até o momento: {formatacao_erro}')
+                                        elif tentativas_erro == 2:
+                                            print(' | ')
+                                            print(' O ')
+                                            print(' |')
+                                            print(f'letras erradas até o momento: {formatacao_erro}')
+                                        elif tentativas_erro == 3:
+                                            print(' | ')
+                                            print(' O ')
+                                            print('/|')
+                                            print(palavra_formatada)
+                                            print(f'letras erradas até o momento: {formatacao_erro}')
+                                        elif tentativas_erro == 4:
+                                            print(' | ')
+                                            print(' O ')
+                                            print('/|\\')
+                                            print(palavra_formatada)
+                                            print(f'letras erradas até o momento: {formatacao_erro}')
+                                        elif tentativas_erro == 5:
+                                            print(' | ')
+                                            print(' O ')
+                                            print('/|\\')
+                                            print('/')
+                                            print(palavra_formatada)
+                                            print(f'letras erradas até o momento: {formatacao_erro}')
+                                        elif tentativas_erro == 6:
+                                            print(' | ')
+                                            print(' O ')
+                                            print('/|\\')
+                                            print('/ \\')
+                                            break
+
+
+
+                                    if palavra_formatada.count('*') > 0:
+                                        print(f'Ainda faltam {palavra_formatada.count('*')} letras')
+                                        
+
+                                        
+
+                                if palavra_formatada == palavra_secreta:
+                                    os.system('cls')
+                                    print(f'Parabéns, você acertou a palavra secreta: "{palavra_secreta}", 
+                                            número de tentativas: {tentativas_acerto+tentativas_erro}')
+                                    voltar = True
+                                    
+
+
+                                else:
+                                    print(f'Infelizmente você errou... Sinto muito, a palavra secreta era: 
+                                            "{palavra_secreta}" e você perdeu faltando 
+                                                {palavra_formatada.count('*')} letras') 
+                                    voltar = True
+                                        
+
+                                while voltar == True:
+                                    novamente = input('Gostaria de jogar novamente? S/N: ')
+                                    novamente = novamente.lower()
+                                    if novamente == 's':
+                                        os.system('cls')
+                                        voltar = False
+                                    elif novamente == 'n':
+                                        jogando = False
+                                        voltar = False
+                                        os.system('cls')
+                                    else:
+                                        print('Digite uma opção valida')
+                        </code></pre>
+                        <p><b>Observação: </b>Programa codado para simular um jogo da forca, utilizado variaveis de controle para saidas e entradas no while, tenho tentado efetuar esse controle na maioria dos programas e exercicios que tenho criado para implementação em outros programas, sem a necessidade de ficar apertando code runner do vscode.</p>
+                        <p><b>Dificuldades: </b>Durante a criação do algoritmo, travei bastante no for, estava tentando mutar uma str ao invés de cirar uma nova. Ainda estou tendo um pouco de dificuldade em continues e breaks, mas tenho melhorado minha velocidade de codagem</p>
+                    </div>
+                
+                <h3>Calculador de Notas</h3>
+                    <div>
+                        <p>Calculadora de média de notas imputadas, utilizado Mutação de lista e iteração de listagem.</p>
+                        <pre><code>
+                            istema_on = True
+
+                            while sistema_on:
+                                print (
+                                    'Bem vindo ao sistema de notas, o sistema te ajuda a organizar
+                                     suas notas para avaliar média.')
+                                entrar_programa = input('Gostaria da avaliar suas notas? S/N: ')
+
+                                if len(entrar_programa) > 1:
+                                    print('Opção invalida')
+                                    continue
+                                
+                                
+                                if entrar_programa.lower() == 's':
+                                    notas = []
+                                    
+                                    calculando_notas = True
+
+                                    while calculando_notas:
+                                        nota_add = input(
+                                            f'Digite a {len(notas) + 1}º nota por favor, 
+                                            caso queira consolidar as notas, digite "c": ')
+                                        
+
+                                        if nota_add.isdigit() and int(nota_add) <= 10:
+                                            notas.append(int(nota_add))
+                                            print(notas)
+
+                                        elif nota_add.lower() == 'c':
+                                            
+                                            if len(notas) == 0:
+                                                print('Nenuma nota foi inserida')
+                                                saida = True
+                                                while saida:
+                                                    val_saida = input('Deseja sair do programa? S/N: ')
+                                                    
+                                                    if val_saida.lower() == 's':
+                                                        print('Perfeito, volte quando precisar')
+                                                        saida = False
+                                                        sistema_on = False
+                                                        calculando_notas = False
+                                                        
+
+                                                    elif val_saida == 'n':
+                                                        break
+
+                                                    else:
+                                                        print('Opção de saida invalida invalida')
+                                                continue
+
+                                            soma_notas = 0
+                                            maior_nota = notas[0]
+                                            menor_nota = notas[0]
+
+                                            for i in notas:
+                                                if i > maior_nota:
+                                                    maior_nota = i
+                                                soma_notas += i
+
+                                            for i in notas:
+                                                if i < menor_nota:
+                                                    menor_nota = i
+
+
+                                            media_notas = soma_notas / len(notas)
+
+                                            print(f'Segue consolidação das notas:')
+                                            print(f'Quantidade de notas {len(notas)}')
+                                            print(f'Média final é {media_notas:.2f}')
+                                            print(f'Sua maior nota foi {maior_nota}')
+                                            print(f'Sua menor nota foi {menor_nota}')
+                                            
+                                            calculando_notas = False
+
+                                        else:
+                                            print('Entrada invalida')
+                                            
+
+                                
+                                elif entrar_programa.lower() == 'n':
+                                    print('Perfeito, volte quando precisar!')
+                                    break
+                                
+                                else:
+                                    print('Opção invalida')
+
+                        </code></pre>
+                        <p><b>Observação: </b>Utilizado lista para imputar as notas e guardar as informações, utilizado sistema de consolidação para efetuar a media da nota. Aplicativo deixa imputar somente numeros. </p>
+                        <p><b>Dificuldades: </b>Aqui não tive dificuldades consideraveis como os outros cods, anotado para mostrar evolução</p>
+                    </div>
+     
+                
+            </div>
+            </div>    
+        </section>
+        <section>
+            <div class="secao">
+                <div class="top_align">
+                    <h2>Pontos de atenção</h2>
+                    <h3 class="topico">Código limpo</h3>
+                    <p>
+                    Os códigos que utilizamos e codamos, não são para nós mesmos, geralmente codamos para outras pessoas, então a ideia é manter o codigo mais simples o possivel e limpo para que outras pessoas entendam o cód com maior facilidade.
+                
+                    </p>
+                    <h3 class="topico">Constantes</h3>
+                    <p>Algumas variaveis dentro do cod terão que ser unicas e muitas vezes no cod acabamos mudando a variavel conforme o cod vai evoluindo, as variveis que não vão mudar recomenda-se colocar ela em CAIXA ALTA</p><br>
+           
+                </div>
+            </div>
+        </section>
+
+
+
+    
+    </body>
+
+</html>
