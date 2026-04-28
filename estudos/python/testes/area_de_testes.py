@@ -29,11 +29,10 @@
 
 
 
-lista = [1,5,6,7,8]
-soma_lista = 0
+lista = ['macaco','banana','maca']
 
-for i in lista:
-    soma_lista += i
-media_lista = soma_lista / len(lista)
+for i in range(len(lista)):
+    print(i, lista[i])
 
-print(media_lista)
+
+
