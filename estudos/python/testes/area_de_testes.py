@@ -31,8 +31,8 @@
 
 lista = ['macaco','banana','maca']
 
-for i in range(len(lista)):
-    print(i, lista[i])
+for i, item in enumerate(lista, start= 1):
+    print(i, item, sep= " - ")
 
 
 

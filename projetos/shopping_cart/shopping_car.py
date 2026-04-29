@@ -1,21 +1,8 @@
-# lista = ['macaco','baleia','cachorro','gato','tigre']
-# inv_lista = []
-
-# # for item_list in lista:
-# #     inv_lista.insert(0,item_list)    
-
-# # print(inv_lista)
-
-# ranger_list = len(lista) - 1
-
-# for i in range(-ranger_list):
-#     print(i)
-# 23:15
 
 carrinho_compras = []
 lista_completa = False
 
-while lista_completa == False:
+while not lista_completa:
 
     # mostrar que o carrinho de compras está vazio
     if len(carrinho_compras) == 0:
@@ -29,8 +16,8 @@ while lista_completa == False:
         # Validação de itens dentro do carrinho
         if len(carrinho_compras) > 0:
             print('Seu carrinho ainda contempla alguns itens: ')
-            for i in range(len(carrinho_compras)):
-                print(i, carrinho_compras[i], sep="-")
+            for i, item in enumerate(carrinho_compras, start=1):
+                print(i, item, sep=" - ")
             
             # Loop de saida
             conf_saida = False
@@ -45,8 +32,8 @@ while lista_completa == False:
                 
                 elif val_saida.lower() == 'n':
                     print('Perfeito, vamos continuar, segue lista:')
-                    for i in range(len(carrinho_compras)):
-                        print(i, carrinho_compras[i], sep="-")
+                    for i, item in enumerate(carrinho_compras, start=1):
+                        print(i, item, sep=" - ")
 
                     conf_saida = True
                     continue
@@ -54,19 +41,31 @@ while lista_completa == False:
                 else:
                     print('Entrada invalida')
             continue
+        
+        else:
+            print('Perfeito, volte quando precisar!!')
+            lista_completa = True
+            continue
 
     # UX para remover item da lista
     elif add_carrinho.lower() == 'remover':
         print('Segue lista:')
-        for i in range(len(carrinho_compras)):
-            print(i, carrinho_compras[i], sep="-")
-        exc_carrinho = input('Digite o numero do item à cima que deseja remover: ')
-        
+        for i, item in enumerate(carrinho_compras, start=1):
+            print(i, item, sep=" - ")
+        exc_carrinho = input('Digite o numero do item na lista à cima que deseja remover: ')
+
         if exc_carrinho.isdigit():
-            print(f'Perfeito, "{carrinho_compras[int(exc_carrinho)]}" foi excluido da lista, segue lista atual: ')
-            carrinho_compras.pop(int(exc_carrinho)) 
-            for i in range(len(carrinho_compras)):
-                print(i, carrinho_compras[i], sep="-")
+
+            if int(exc_carrinho) > len(carrinho_compras) or int(exc_carrinho) == 0:
+                print(f'O numero "{exc_carrinho}" não consta na lista')
+                for i, item in enumerate(carrinho_compras, start=1):
+                    print(i, item)
+                continue
+
+            print(f'Perfeito, "{carrinho_compras[int(exc_carrinho) - 1]}" foi excluido da lista, segue lista atual: ')
+            carrinho_compras.pop(int(exc_carrinho) - 1) 
+            for i, item in enumerate(carrinho_compras, start=1):
+                print(i, item, sep=" - ")
             
         
         else:
@@ -79,41 +78,15 @@ while lista_completa == False:
     # Validação dentro da lista
     if add_carrinho.lower() in carrinho_compras:
         print('Item já consta na lista, segue lista atual:')
-        for i in range(len(carrinho_compras)):
-            print(i, carrinho_compras[i], sep='-')
+        for i, item in enumerate(carrinho_compras, start=1):
+            print(i, item, sep=" - ")
         continue
 
     carrinho_compras.append(add_carrinho)
 
-    for i in range(len(carrinho_compras)):
-        print(i, carrinho_compras[i], sep="-")
+    for i, item in enumerate(carrinho_compras, start=1):
+        print(i, item, sep=" - ")
 
 
-
-
-            
-
-    
 
 print('saiu')
-
-    
-
-
-
-    
-    
-
-
-
-
-
-    
-            
-
-
-
-
-
-
-    
