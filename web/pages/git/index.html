@@ -67,13 +67,16 @@
             <div class="secao">
                 <div class="top_align">
                     <h2>Anotações</h2>
+                        <p>
+                            <b>Repositório: </b>É onde o codigo vai ser armazenado. (projeto)<br>
+                            <b>.gitignore: </b>Arquivo recomendado pra informarmos arquivos ou pastas sensíveis que por segurança é melhor deixar fora do repositório. Podemos destacar pastas e categorias de arquivos que devem ser ignoradas pelo git.<br>
+                            
+                        </p>
 
+                    <h3 class="topico">Comandos</h3>
                     <p>
-                        Aqui vou aprender sobre git e github<br>
-                        Aula de instalação<br>
-                        Teminal Git<br>
-
-                        repositorio: é onde o codigo vai ser armazenado. (projeto)<br>
+                        
+                        
                         <b>git status</b> Mostra o status atual do git, vai mostrar se tem arquivo pra commit, se tem arquivo pra salvar e etc <br>
                         <b>git init</b> Inicia um novo projeto git<br>
                         <b>git add</b> Adiciona o arquivo no git<br>
@@ -87,9 +90,12 @@
                         <b>git rm</b> Deleta o arquivo do projeto, esse comando não isola o arquivo do monitoramento, ele realmente excluí do projeto.<br>
                         <b>git log</b> Mostra as informações dos commits realizados no projeto.<br>
                         <b>git mv</b> Permite mover e alterar o nome do arquivo. Funciona de forma similar ao ctr+x que tira o arquivo e deixa na memória até a fase de colar.<br>
-                        <b>git checkout</b> 
-                </div>
+                        <b>git checkout</b> volta ao estado anterior. Precisa tomar atenção, pois depois disso não podemos utilziar o ctrl+z.<br>
+                        O git checkourt pode ser meio confuso, então o Git separou a função em <b>git switch</b> para trocar a branch, <b>git swith -c</b> para criar nova branch e <b>git restore</b> para restaurar o arquivo.<br>
+                        <b>git reset --hard</b> Volta o arquivo no tempo e apaga tudo o que foi feito. Pode-se utilizar o id do commit da versão estável para apagar todo o restante.<br>
 
+
+                </div>
             </div>
 
         </section>
