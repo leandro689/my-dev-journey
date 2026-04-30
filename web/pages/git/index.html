@@ -70,7 +70,8 @@
                         <p>
                             <b>Repositório: </b>É onde o codigo vai ser armazenado. (projeto)<br>
                             <b>.gitignore: </b>Arquivo recomendado pra informarmos arquivos ou pastas sensíveis que por segurança é melhor deixar fora do repositório. Podemos destacar pastas e categorias de arquivos que devem ser ignoradas pelo git.<br>
-                            
+                            <b>Branch: </b>É uma versão separada do projeto para fim de organização, utilizado para criação de novas features dentro do projeto sem trabalhar dentro do código main, assim isolando testes, correções e etc. Depois da nova feature ou atualização estiver estável unificamos a branch com a branch master.<br>
+
                         </p>
 
                     <h3 class="topico">Comandos</h3>
@@ -91,9 +92,10 @@
                         <b>git log</b> Mostra as informações dos commits realizados no projeto.<br>
                         <b>git mv</b> Permite mover e alterar o nome do arquivo. Funciona de forma similar ao ctr+x que tira o arquivo e deixa na memória até a fase de colar.<br>
                         <b>git checkout</b> volta ao estado anterior. Precisa tomar atenção, pois depois disso não podemos utilziar o ctrl+z.<br>
-                        O git checkourt pode ser meio confuso, então o Git separou a função em <b>git switch</b> para trocar a branch, <b>git swith -c</b> para criar nova branch e <b>git restore</b> para restaurar o arquivo.<br>
+                        O git checkout pode ser meio confuso, então o Git separou a função em <b>git switch</b> para trocar a branch, <b>git swith -c</b> para criar nova branch e <b>git restore</b> para restaurar o arquivo.<br>
                         <b>git reset --hard</b> Volta o arquivo no tempo e apaga tudo o que foi feito. Pode-se utilizar o id do commit da versão estável para apagar todo o restante.<br>
-
+                        <b>git branch</b> Visualiza as branchs.<br>
+                        <b>git branch (nome)</b> Cria um novo Branch.<br>
 
                 </div>
             </div>
