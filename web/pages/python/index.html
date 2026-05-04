@@ -217,6 +217,14 @@
                         <b>IndexError: </b>Utiliza-se para erros em índices, quando por exemplo, tentamos excluir um item de uma lista e utilizamos o ídice incorreto para isso.<br>
                         <b>Exception: </b>Utiliza-se para quando não sabemos qual erro pode dar dentro do try.<br>
                     </p>
+                
+                <h3 class="topico">Imprecisão ponto flutuante</h3>
+                    <p>Em algumas linguágens de programação, é utilizado um sistema chamado "Double-precision floating-point format IEEE 754."<br>
+                        Em somas de números flutuantes, ao efetuarmos o calcúlo por exemplo de 0.1 + 0.7, o resultado seria de 0.7999999.<br>
+                        Existem algumas fórmas de contornar essa situação, uma delas é utilizando o f'{variavel:.f}'.<br>
+                        A função round() que arredonda o número decimal.<br>
+                        Import decimal do Python, esse é utilizado somente para números flutuantes que precisamos de dados extremamente precisos. decimal.Decimal('0.1') </p>
+
 
 
             </div>
@@ -246,7 +254,7 @@
                         print(f"calculamos o seu imc e o mesmo é... {imc:.2f}")
                     </code></pre>
                     <p><b>Observação:</b> Aqui utilizamos as variais, a função  para colocar os dados no programa, o print pra exibir os resultados e a função float, que converte o peso e a altura de strings para números flutantes, para conseguirmos efetuar o calculo</p>
-                    </div>input
+                    </div>
                 
                 <h3 class="topico"> Programa de entrada e saida </h3>
                     <div>
