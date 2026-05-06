@@ -127,8 +127,10 @@
                     <b class="sub_top">clear</b> Utilizado para limpar a lista<br>
                     <b class="sub_top">insert </b>Utilizado para inserir um item na lista no inicio da lista, utilizado em listas pequenas, não recomendado em listas grandes, pois ele sempre vai empurrar os outros items para frente na lista, assim processando mais energia<br>
                     <b class="sub_top">.extend()</b> Método utilizado para extender uma lista<br>
-                    <b class="sub_top">.copy() </b> Método utilizado para copiar uma lista e manter as duas na memória, assim garantindo que a primeira não seja mutada<br>
-                    
+                    <b class="sub_top">.copy()</b> Método utilizado para copiar uma lista e manter as duas na memória, assim garantindo que a primeira não seja mutada<br>
+                    <b class="sub_top">.split()</b> Método que pode ser utilizado para fatiar srt(frases) por caracteres específicos.<br>
+                    <b class="sub_top">.sprit()</b> Método utilizado para tirar os espaços do começo e final da str. (pode-se colocar r ou l no começo para diferenciar direita ou esquerda).<br>
+                    <b class="sub_top">.join()</b> Método de string, utilizado para separar objetos iretáveis.<br>
                     <!-- <b class="sub_top"></b><br> -->
 
 
@@ -220,8 +222,8 @@
                 
                 <h3 class="topico">Imprecisão ponto flutuante</h3>
                     <p>Em algumas linguágens de programação, é utilizado um sistema chamado "Double-precision floating-point format IEEE 754."<br>
-                        Em somas de números flutuantes, ao efetuarmos o calcúlo por exemplo de 0.1 + 0.7, o resultado seria de 0.7999999.<br>
-                        Existem algumas fórmas de contornar essa situação, uma delas é utilizando o f'{variavel:.f}'.<br>
+                        Em somas de números flutuantes, ao efetuarmos o cálculo por exemplo de 0.1 + 0.7, o resultado seria de 0.7999999.<br>
+                        Existem algumas formas de contornar essa situação, uma delas é utilizando o f'{variavel:.f}'.<br>
                         A função round() que arredonda o número decimal.<br>
                         Import decimal do Python, esse é utilizado somente para números flutuantes que precisamos de dados extremamente precisos. decimal.Decimal('0.1') </p>
 
@@ -258,7 +260,7 @@
                 
                 <h3 class="topico"> Programa de entrada e saída </h3>
                     <div>
-                    <p> Realizado um programa para entrada e saída com uma senha fixa definida. Programa basico de entrada, aprimoração: branco de dado para senhas alteraveis</p>
+                    <p> Realizado um programa para entrada e saída com uma senha fixa definida. Programa básico de entrada, aprimoração: branco de dado para senhas alteráveis</p>
                     <pre><code>
                         entrada = input('Entrar no programa? S/N: ')
                         senha_permitida = "080500"
@@ -382,7 +384,7 @@
 
                 <h3 class="topico">Exercicio de Índices - trabalhando com letras</h3>
                     <div>
-                        <p>Programa com entrada de nome e data de nascimento, interte o nome, fala se contem espaços, número de letras.<br>
+                        <p>Programa com entrada de nome e data de nascimento, inverte o nome, fala se contem espaços, número de letras.<br>
                         <b>Version with "or":</b></p>
                         <pre><code>
                             nome_usuario = input('Diga seu nome: ')
@@ -438,12 +440,12 @@
                                 print(f'Desculpe, você não digitou as infos necessárias')
 
                         </code></pre>
-                        <p><b>Observação:</b> Neste programa de duas entradas, foi utilizado somente o nome para conversões de fatiamentes de str. Foi utilizado a função "ou" para verificar se as entradas foram preenchidas. Caso não, ele retorna que não ouve entrada, ele informa se o nome da pessoas tem espaços, faz a contagem de letras com a função len, e faz as inverções e fatiamentos com o índice <b>[::]</b> </p>
+                        <p><b>Observação:</b> Neste programa de duas entradas, foi utilizado somente o nome para conversões de fatiamentes de str. Foi utilizado a função "ou" para verificar se as entradas foram preenchidas. Caso não, ele retorna que não houve entrada, ele informa se o nome da pessoas tem espaços, faz a contagem de letras com a função len, e faz as inverções e fatiamentos com o índice <b>[::]</b> </p>
                     </div>
                 
                 <h3 class="topico">Mutação de str - iteração</h3>
                     <div>
-                        <p>O prgrama pega a str inputada e fatia letra por letra e faz uma nova str adicionando "*" entre as letras.</p>
+                        <p>O programa pega a str inputada e fatia letra por letra e faz uma nova str adicionando "*" entre as letras.</p>
                         <pre><code>
                             nome = input('Digite seu nome: ')
                             contlet = len(nome)
@@ -465,9 +467,9 @@
                         <p><b>Observação: </b>Utilizado while, interação e contadores aritimeticos, o programa consiste em um input onde você adiciona uma STR ao programa, a variável contagem de letras vai definir o tanto de vezes que vai rodar o while (trazendo o valor de caracteres dentro da str). Enquanto o while estiver rodando, ele vai passar por cada caractere da str e vai adicionalo a uma nova variável com um * nominada como newname. Assim, no final teremos a str com os caracteres inseridos entre *.</p>
                     </div>
                     
-                <h3 class="topico">>Contador de caracteres (STR)</h3>
+                <h3 class="topico">>Contadores de caracteres (STR)</h3>
                     <div>
-                    <p> Faz a contagem de caracteres especificos dentro de str, utilizando while, else e índice com contador Arietimeticos.</p>
+                    <p> Faz a contagem de caracteres especificos dentro de str, utilizando while, else e índice com contadores Arietimeticos.</p>
                     <pre><code>
                         string = input('cole algum texto para contarmos caracteres especificos: ')
                         caractere = input('Escolha o caractere que deseja contar: ')
@@ -519,13 +521,13 @@
                           que apareceu {qte_letra_mais_mencionada}x')
 
                     </code></pre>
-                    <p><b>Observação: </b> Tem a mesma lógica do contador anterior, porém esse utiliza a memória do programa, efetua o calculo da quantidade de cada caracter no texto, e adiciona o caracter que mais teve menções dentro dele, subsituindo na memória somente quando houver outro caractere que passar pelo índice que apareceu mais vezes que o anterior.</p>
+                    <p><b>Observação: </b> Tem a mesma lógica do contador anterior, porém esse utiliza a memória do programa, efetua o calculo da quantidade de cada caracter no texto, e adiciona o caracter que mais teve menções dentro dele, substituindo na memória somente quando houver outro caractere que passar pelo índice que apareceu mais vezes que o anterior.</p>
                     </div>
                 
                 <h3 class="topico">Calculadora - com while, soma de operações e funcionalidades extras.</h3>
                     <div>
                     <p>Caluladora mais complexa que a anterior, quando você começa um calculo ela vai somando o calculo até você dizer para ela parar.<br>
-                    <b>Versão codada por min:</b></p>
+                    <b>Versão codada por mim:</b></p>
                     <pre><code>
                         print ('fala man, bora calcular! Para sair digite "sair"')
                         número1 = input('Digite um número: ')
