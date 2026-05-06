@@ -109,18 +109,18 @@
                     <b class="sub_top">pass</b> Função para ignorar a condição, por exemplo, vc não coda entre os blocos if ou try, se você colocar o pass, ele ignora o erro e continua o cod. <br>
                     <b class="sub_top">documentação:</b> https://docs.python.org/pt-br/3/library/stdtypes.html<br>
                     <b class="sub_top">Dados imutáveis</b> str, int, float, bool. São objetos imutaiveis no python, caso eu queira mudar, eu tenho que montar outra variável<br>
-                    <b class="sub_top">while</b> função que se repete dentro do código a não ser que tenha uma saida. Por exemplo um <b class="sub_top">break</b> ou uma variável alterada que te tira do while<br>
+                    <b class="sub_top">while</b> função que se repete dentro do código a não ser que tenha uma saída. Por exemplo um <b class="sub_top">break</b> ou uma variável alterada que te tira do while<br>
                     <b class="sub_top">.lower:</b> converte a str para letra minúscula<br>
                     <b class="sub_top">.startswith</b> Verifica a inicial da str<br>
-                    <b class="sub_top">.endwith</b> Verifica o final da str<br>
+                    <b class="sub_top">.endswith</b> Verifica o final da str<br>
                     <b class="sub_top">and</b> Mesma lógica da porta or, compara duas variáveis ou mais, caso qualquer uma seja verdadeira, a função se torna verdadeira.<br>
                     <b class="sub_top">not</b> Mesma lógica da porta not, ele inverte a função, se a função procura algo verdadeiro o not procura algo falso.<br>
                     <b class="sub_top">.isdigit()</b> Utilizado para verificar se a entrada é um número ou não.<br>
-                    <b class="sub_top">len()</b> Utilizado para convertar str em número, ele conta a quantidade de caracteres que tem uma str.<br>
+                    <b class="sub_top">len()</b> Utilizado para converter str em número, ele conta a quantidade de caracteres que tem uma str.<br>
                     <b class="sub_top">int()</b> Converte a entrada de str para número, caso não for número ele retorna erro. <br>
-                    <b class="sub_top">for: </b>Funçao em loop, utilizada assim como o while, porém com ele utiliza-se de forma mais precisa, o while, ele funciona só enquanto função bool vinculada a ele for True. <br>
+                    <b class="sub_top">for: </b>Função em loop, utilizada assim como o while, porém com ele utiliza-se de forma mais precisa, o while, ele funciona só enquanto função bool vinculada a ele for True. <br>
                     <b class="sub_top">Range(start, stop, step) </b>Utiliza-se para criar uma distancia a ser percorrida, dentro dos () podemos definir onde ele vai começar, onde vai parar e de quanto em quanto ele vai operar. <br>
-                    <b class="sub_top">[] - lista</b> Utiliza-se para listas, listas são mutáveis dentro do py, Criar, deleter, alterar itens de dentro dela.<br>
+                    <b class="sub_top">[] - lista</b> Utiliza-se para listas, listas são mutáveis dentro do py, Criar, remover, alterar itens de dentro dela.<br>
                     <b class="sub_top">.append()</b> Utilizado para adicionar itens na lista.<br>
                     <b class="sub_top">.pop()</b> Remove o ultimo valor da lista. Pode ser inserido dentro de uma variável para mostar qual item foi removido. Exemplo lista [0,1,2,3] Variável - item_removido = lista.pop() - essa variável vai tirar o ultimo item da lista no caso o 3 e a variável item_removida é igual a 3<br>
                     <b class="sub_top">del</b> Utilzado para remover um determinado item da lista<br>
@@ -198,7 +198,7 @@
                     <b class="sub_top">+=</b> Soma valores, ou concatena (em casos de string)<br>
                     <b class="sub_top">*=</b> Multiplica valores.<br>
                     <b class="sub_top">/=</b> Divide o valor, converte o item para float.<br>
-                    <b class="sub_top">//=</b> Divide o valor, e tras o valor inteiro, exemplo: 10 // 4 traria um 2.<br>
+                    <b class="sub_top">//=</b> Divide o valor, e traz o valor inteiro, exemplo: 10 // 4 traria um 2.<br>
                     <b class="sub_top">**= </b><br> Exponencia o valor. <br> 
                     <b class="sub_top">%=</b> Traz a sobra de uma divisão<br>
                     
@@ -211,9 +211,9 @@
                         <b>Exemplo:</b> *resto</p>
                 
 
-                <h3 class="topico">Classes - excpet</h3>
+                <h3 class="topico">Classes - excepet</h3>
                     <p>Podemos utilizar classes para tratar erros dentro do try/except<br>
-                        <b>VallueError: </b>Utiliza-se para um valor incorreto, conseguimos utilizar em conversões.<br>
+                        <b>ValueError: </b>Utiliza-se para um valor incorreto, conseguimos utilizar em conversões.<br>
                         <b>IndexError: </b>Utiliza-se para erros em índices, quando por exemplo, tentamos excluir um item de uma lista e utilizamos o ídice incorreto para isso.<br>
                         <b>Exception: </b>Utiliza-se para quando não sabemos qual erro pode dar dentro do try.<br>
                     </p>
@@ -235,7 +235,7 @@
                 <div class="top_align">
                 <h2> Exercicios </h2>
                 
-                <h3 class="topico"> Calculardora de IMC </h3>
+                <h3 class="topico"> Calculadora de IMC </h3>
                     <div>
                     <p>
                         Realizado um programa que questiona, seu nome, idade, peso e altura e emite seu imc.</p>
@@ -256,9 +256,9 @@
                     <p><b>Observação:</b> Aqui utilizamos as variais, a função  para colocar os dados no programa, o print pra exibir os resultados e a função float, que converte o peso e a altura de strings para números flutantes, para conseguirmos efetuar o calculo</p>
                     </div>
                 
-                <h3 class="topico"> Programa de entrada e saida </h3>
+                <h3 class="topico"> Programa de entrada e saída </h3>
                     <div>
-                    <p> Realizado um programa para entrada e saida com uma senha fixa definida. Programa basico de entrada, aprimoração: branco de dado para senhas alteraveis</p>
+                    <p> Realizado um programa para entrada e saída com uma senha fixa definida. Programa basico de entrada, aprimoração: branco de dado para senhas alteraveis</p>
                     <pre><code>
                         entrada = input('Entrar no programa? S/N: ')
                         senha_permitida = "080500"
@@ -317,9 +317,9 @@
                     <p><b>Observação:</b> Foi utilizado IF para converter a variável da comparação, todas as variáveis entraram como falsas, quando o programa indica as caracteristicas dos valores, entra no segundo if mostrando conforme comparação validada.</p>
                     </div>
                     
-                <h3 class="topico">Programa de entrada e saida com while</h3>
+                <h3 class="topico">Programa de entrada e saída com while</h3>
                     <div>
-                    <p>Mesma coisa do programa de entrada e saida anterior, porém esse utilizamos o while, para nos mantermos dentro do log de entrada até a senha correta ser inserida ou o usuario utilizar a função sair.</p>
+                    <p>Mesma coisa do programa de entrada e saída anterior, porém esse utilizamos o while, para nos mantermos dentro do log de entrada até a senha correta ser inserida ou o usuario utilizar a função sair.</p>
                     <pre><code>
                         condicao = True
                         nome = None
@@ -380,7 +380,7 @@
                         <p><b>Observação: </b>Nessa calculadora, temos duas entradas n1 e n2, você primeiro escolhe o n1, operação simples e n2. O cod entra no IF, fara a operação escolhida e mostrar o resultado, caso a operação escolhida seja invalida. Else apresenta valor de Erro.</p>
                     </div>
 
-                <h3 class="topico">Exercicio de Inidices - trabalhando com letras</h3>
+                <h3 class="topico">Exercicio de Índices - trabalhando com letras</h3>
                     <div>
                         <p>Programa com entrada de nome e data de nascimento, interte o nome, fala se contem espaços, número de letras.<br>
                         <b>Version with "or":</b></p>
@@ -695,9 +695,9 @@
                     </div>
                 
                 
-                <h3 class="topico">Programa de entrada e saida - validação de senha e usuario - cadastro e limite de tentativas.</h3>    
+                <h3 class="topico">Programa de entrada e saída - validação de senha e usuario - cadastro e limite de tentativas.</h3>    
                     <div>
-                        <p>Programa de entrada e saida, com função de entrada e saida, cadastro de login, cadastro de senha e contagem de tentativas. </p>
+                        <p>Programa de entrada e saída, com função de entrada e saída, cadastro de login, cadastro de senha e contagem de tentativas. </p>
                         <pre><code>
                             entrada_programa = None 
                             login_entrada = None
@@ -935,7 +935,7 @@
                                     else:
                                         print('Digite uma opção valida')
                         </code></pre>
-                        <p><b>Observação: </b>Programa codado para simular um jogo da forca, utilizado variáveis de controle para saidas e entradas no while, tenho tentado efetuar esse controle na maioria dos programas e exercicios que tenho criado para implementação em outros programas, sem a necessidade de ficar apertando code runner do vscode.</p>
+                        <p><b>Observação: </b>Programa codado para simular um jogo da forca, utilizado variáveis de controle para saídas e entradas no while, tenho tentado efetuar esse controle na maioria dos programas e exercicios que tenho criado para implementação em outros programas, sem a necessidade de ficar apertando code runner do vscode.</p>
                         <p><b>Dificuldades: </b>Durante a criação do algoritmo, travei bastante no for, estava tentando mutar uma str ao invés de cirar uma nova. Ainda estou tendo um pouco de dificuldade em continues e breaks, mas tenho melhorado minha velocidade de codagem</p>
                     </div>
                 
