@@ -80,7 +80,7 @@
                     <b class="sub_top">print</b> A função print, utilizamos para imprimir algo na tela, seja uma variável, uma string, um número, algum objeto do py<br>
                 </p>
                         <ul>
-                            <li>Sep - dentro do print, serve para definir um caracter de separação - Ex: print(arg1,arg2,arg3) sem o sep, teremos o seguinte resultado: arg1 arg2 arg3<br>
+                            <li>Sep - dentro do print, serve para definir um caracter de separação - Ex: print(arg1,arg2,arg3) sem o sep, teremos o seguinte resultado: arg1 arg2 arg3</li>
                             Caso tenha o o sep no print: print(arg1,arg2,arg3, sep='-'), teremos o seuinte resultado: arg1-arg2-arg3</li>
                             <li>end='' - dentro do print ele define qual será o final do print, todo print ele ja tem como final um "enter", se definirmos com o end ele não dará o enter e colocará o caracter selecionado<br>
                             <b>Exemplo: sem end</b><br>
@@ -89,7 +89,6 @@
                             <b>Resultado:</b><br>
                             arg1<br>
                             arg2<br>
-                            <br>
                             <b>Exemplo: com end</b><br>
                             print(arg1,end='-')
                             print(arg2)<br>
@@ -182,8 +181,8 @@
                 
 
                     </code></pre>
-                    <p>
-                        <b class="sub_top">Observação:</b> Aqui utilizamos inputs para informações, a variável concat pra juntar todas as infos fornecidas e depois utilizamos interpolação pelo f'', para fatiarmos a str. percebe-se que o fatiamento é feito dentro da função "[]". Desta forma: <b class="sub_top">[inicio da str: até onde vai]</b> Espaços vazios definem como 0. Ou seja no trecho do código, "[:len(nome)] ele conta quantas letras tem o input nome inserido e o converte em número, assim vai contar do 0 até a quantidade de caracteres existentes em nome."
+                    <p class="obs">
+                        <b>Observação:</b> Aqui utilizamos inputs para informações, a variável concat pra juntar todas as infos fornecidas e depois utilizamos interpolação pelo f'', para fatiarmos a str. percebe-se que o fatiamento é feito dentro da função "[]". Desta forma: <b class="sub_top">[inicio da str: até onde vai]</b> Espaços vazios definem como 0. Ou seja no trecho do código, "[:len(nome)] ele conta quantas letras tem o input nome inserido e o converte em número, assim vai contar do 0 até a quantidade de caracteres existentes em nome."
                     </p>
                     
                     
@@ -255,7 +254,7 @@
                              sua altura é {float(altura)} e seu peso {float(peso)}.')
                         print(f"calculamos o seu imc e o mesmo é... {imc:.2f}")
                     </code></pre>
-                    <p><b>Observação:</b> Aqui utilizamos as variais, a função  para colocar os dados no programa, o print pra exibir os resultados e a função float, que converte o peso e a altura de strings para números flutantes, para conseguirmos efetuar o calculo</p>
+                    <p class="obs"><b>Observação:</b> Aqui utilizamos as variais, a função  para colocar os dados no programa, o print pra exibir os resultados e a função float, que converte o peso e a altura de strings para números flutantes, para conseguirmos efetuar o calculo</p>
                     </div>
                 
                 <h3 class="topico"> Programa de entrada e saída </h3>
@@ -281,7 +280,7 @@
 
 
                     </code></pre>
-                    <p><b>Observação: </b>Aqui foram utilizados inputs e uma variável de senha fixa permitida, caso a pessoa digite s no input de entrada, ela entra no programa depois que digitar a senha.</p>
+                    <p class="obs"><b>Observação: </b>Aqui foram utilizados inputs e uma variável de senha fixa permitida, caso a pessoa digite s no input de entrada, ela entra no programa depois que digitar a senha.</p>
                     </div>
                 
                 <h3 class="topico">Comparador de valores - Dois valores </h3>
@@ -316,7 +315,7 @@
                         else:
                             print('Cara tem uma coisa muito errada....')
                     </code></pre>
-                    <p><b>Observação:</b> Foi utilizado IF para converter a variável da comparação, todas as variáveis entraram como falsas, quando o programa indica as caracteristicas dos valores, entra no segundo if mostrando conforme comparação validada.</p>
+                    <p class="obs"><b>Observação:</b> Foi utilizado IF para converter a variável da comparação, todas as variáveis entraram como falsas, quando o programa indica as caracteristicas dos valores, entra no segundo if mostrando conforme comparação validada.</p>
                     </div>
                     
                 <h3 class="topico">Programa de entrada e saída com while</h3>
@@ -354,7 +353,7 @@
                                 print(f'Desculpe {nome},
                                  você não digitou uma opção valida!!')
                     </code></pre>
-                    <p><b>Observação: </b>Foram definidas variações que seriam atualizadas durante o programa. Enquanto a variável condição for "true" o while continuara sendo executado. Temos o IF que te questiona se quer ou não acessar o programa, caso você digite tanto o S maiusculo como o s minúsculo você pode entrar no programa. A unica variável definida antes do while foi a senha permitida.</p>
+                    <p class="obs"><b>Observação: </b>Foram definidas variações que seriam atualizadas durante o programa. Enquanto a variável condição for "true" o while continuara sendo executado. Temos o IF que te questiona se quer ou não acessar o programa, caso você digite tanto o S maiusculo como o s minúsculo você pode entrar no programa. A unica variável definida antes do while foi a senha permitida.</p>
                     </div>
                 
                 <h3 class="topico">Calculadora basica (2 entradas)</h3>
@@ -379,7 +378,7 @@
                                 print("voce não escolheu uma operacao valida")
 
                         </code></pre>
-                        <p><b>Observação: </b>Nessa calculadora, temos duas entradas n1 e n2, você primeiro escolhe o n1, operação simples e n2. O cod entra no IF, fara a operação escolhida e mostrar o resultado, caso a operação escolhida seja invalida. Else apresenta valor de Erro.</p>
+                        <p class="obs"><b>Observação: </b>Nessa calculadora, temos duas entradas n1 e n2, você primeiro escolhe o n1, operação simples e n2. O cod entra no IF, fara a operação escolhida e mostrar o resultado, caso a operação escolhida seja invalida. Else apresenta valor de Erro.</p>
                     </div>
 
                 <h3 class="topico">Exercicio de Índices - trabalhando com letras</h3>
@@ -440,7 +439,7 @@
                                 print(f'Desculpe, você não digitou as infos necessárias')
 
                         </code></pre>
-                        <p><b>Observação:</b> Neste programa de duas entradas, foi utilizado somente o nome para conversões de fatiamentes de str. Foi utilizado a função "ou" para verificar se as entradas foram preenchidas. Caso não, ele retorna que não houve entrada, ele informa se o nome da pessoas tem espaços, faz a contagem de letras com a função len, e faz as inverções e fatiamentos com o índice <b>[::]</b> </p>
+                        <p class="obs"><b>Observação:</b> Neste programa de duas entradas, foi utilizado somente o nome para conversões de fatiamentes de str. Foi utilizado a função "ou" para verificar se as entradas foram preenchidas. Caso não, ele retorna que não houve entrada, ele informa se o nome da pessoas tem espaços, faz a contagem de letras com a função len, e faz as inverções e fatiamentos com o índice <b>[::]</b> </p>
                     </div>
                 
                 <h3 class="topico">Mutação de str - iteração</h3>
@@ -464,10 +463,10 @@
                             
                             print('acabou')
                         </code></pre>
-                        <p><b>Observação: </b>Utilizado while, interação e contadores aritimeticos, o programa consiste em um input onde você adiciona uma STR ao programa, a variável contagem de letras vai definir o tanto de vezes que vai rodar o while (trazendo o valor de caracteres dentro da str). Enquanto o while estiver rodando, ele vai passar por cada caractere da str e vai adicionalo a uma nova variável com um * nominada como newname. Assim, no final teremos a str com os caracteres inseridos entre *.</p>
+                        <p class="obs"><b>Observação: </b>Utilizado while, interação e contadores aritimeticos, o programa consiste em um input onde você adiciona uma STR ao programa, a variável contagem de letras vai definir o tanto de vezes que vai rodar o while (trazendo o valor de caracteres dentro da str). Enquanto o while estiver rodando, ele vai passar por cada caractere da str e vai adicionalo a uma nova variável com um * nominada como newname. Assim, no final teremos a str com os caracteres inseridos entre *.</p>
                     </div>
                     
-                <h3 class="topico">>Contadores de caracteres (STR)</h3>
+                <h3 class="topico">Contadores de caracteres (STR)</h3>
                     <div>
                     <p> Faz a contagem de caracteres especificos dentro de str, utilizando while, else e índice com contadores Arietimeticos.</p>
                     <pre><code>
@@ -488,7 +487,7 @@
                             print(f'No texto colado, contamos todos os "{caractere}",
                              e tivemos o resultado de {cont_let} "{caractere}"s.')
                     </code></pre>
-                    <p><b>Observação:</b> Programa, recebe um input de texto e um input do caracter especifico que será contado quantas vezes aparece dentro do texto. Foi utilizado o <b>len()</b>, para a contagem de caracteres dentro da str. o While para o loop de evolução do índice <b>i</b>. Toda vez que o índice for o caractere selecionado, ele vai somar o contador de letra.</p>
+                    <p class="obs"><b>Observação:</b> Programa, recebe um input de texto e um input do caracter especifico que será contado quantas vezes aparece dentro do texto. Foi utilizado o <b>len()</b>, para a contagem de caracteres dentro da str. o While para o loop de evolução do índice <b>i</b>. Toda vez que o índice for o caractere selecionado, ele vai somar o contador de letra.</p>
                     </div>
                     
                 <h3 class="topico">Calculador de caracteres STR (Devolve a letra que mais aparece no texto, tirando os espaços)</h3>
@@ -521,7 +520,7 @@
                           que apareceu {qte_letra_mais_mencionada}x')
 
                     </code></pre>
-                    <p><b>Observação: </b> Tem a mesma lógica do contador anterior, porém esse utiliza a memória do programa, efetua o calculo da quantidade de cada caracter no texto, e adiciona o caracter que mais teve menções dentro dele, substituindo na memória somente quando houver outro caractere que passar pelo índice que apareceu mais vezes que o anterior.</p>
+                    <p class="obs"><b>Observação: </b> Tem a mesma lógica do contador anterior, porém esse utiliza a memória do programa, efetua o calculo da quantidade de cada caracter no texto, e adiciona o caracter que mais teve menções dentro dele, substituindo na memória somente quando houver outro caractere que passar pelo índice que apareceu mais vezes que o anterior.</p>
                     </div>
                 
                 <h3 class="topico">Calculadora - com while, soma de operações e funcionalidades extras.</h3>
@@ -609,7 +608,7 @@
                         print('Voce saiu')
 
                     </code></pre>
-                    <p><b>Observação:</b> Foram utilizadas variáveis para contar a quantidade de operações, utilizado try para tentar converter as entradas em numeros, caso o try falhe, ele nos sinaliza para inserir um numero valido. Caso a operação for valida, o programa contabiliza a quantidade de operações. Caso não ele não faz a contagem. Adicionado também uma função de zerar a operação, para começarmos outro calculo sem sair do programa.</p>
+                    <p class="obs"><b>Observação:</b> Foram utilizadas variáveis para contar a quantidade de operações, utilizado try para tentar converter as entradas em numeros, caso o try falhe, ele nos sinaliza para inserir um numero valido. Caso a operação for valida, o programa contabiliza a quantidade de operações. Caso não ele não faz a contagem. Adicionado também uma função de zerar a operação, para começarmos outro calculo sem sair do programa.</p>
                     
                     <p><b>Versão do chat gpt, revisada:</b></p>
                     <pre><code>
@@ -657,7 +656,7 @@
                         print("Você saiu da calculadora.")
 
                     </code></pre>
-                    <p><b>Observação:</b> Comparado com o algoritmo codado por mim, a versão do GPT unifica as operações dentro do if, não sendo necessário um if pra cada operação.</p>
+                    <p class="obs"><b>Observação:</b> Comparado com o algoritmo codado por mim, a versão do GPT unifica as operações dentro do if, não sendo necessário um if pra cada operação.</p>
                     </div>
                 
                 <h3 class="topico">Comparador de valores - Dois valores </h3>
@@ -693,7 +692,7 @@
                             print('Cara tem uma coisa muito errada....')
 
                     </code></pre>
-                    <p><b>Observação:</b> Foi utilizado IF para converter a variável da comparação, todas as variáveis entraram como falsas, quando o programa indica as caracteristicas dos valores, entra no segundo if mostrando conforme comparação validada.</p>
+                    <p class="obs"><b>Observação:</b> Foi utilizado IF para converter a variável da comparação, todas as variáveis entraram como falsas, quando o programa indica as caracteristicas dos valores, entra no segundo if mostrando conforme comparação validada.</p>
                     </div>
                 
                 
@@ -802,8 +801,10 @@
                                     print("Você não digitou nenhuma função valida")
 
                         </code></pre>
-                        <p><b>Observação: </b> Programa com laços de while e validações com if e else, todas as entradas foram convertidas para lower para não ter divergencia de entrada, validação de entradas invalidas caso não forem as entradas permitidas no programa. </p>
-                        <p><b>Dificuldades: </b>Durante a codagem, fui criando as variáveis fora do while para me organizar, tive um feedback de que as variáveis fora do while não seriam necessárias. Pontos de melhoria - limpeza de cod, organizção de variáveis.</p>
+                        <p class="obs">
+                            <b>Observação: </b>Programa com laços de while e validações com if e else, todas as entradas foram convertidas para lower para não ter divergencia de entrada, validação de entradas invalidas caso não forem as entradas permitidas no programa.<br>
+                            <b>Dificuldades: </b>Durante a codagem, fui criando as variáveis fora do while para me organizar, tive um feedback de que as variáveis fora do while não seriam necessárias. Pontos de melhoria - limpeza de cod, organizção de variáveis.
+                        </p>
                     </div>
                 
                 
@@ -937,11 +938,14 @@
                                     else:
                                         print('Digite uma opção valida')
                         </code></pre>
-                        <p><b>Observação: </b>Programa codado para simular um jogo da forca, utilizado variáveis de controle para saídas e entradas no while, tenho tentado efetuar esse controle na maioria dos programas e exercicios que tenho criado para implementação em outros programas, sem a necessidade de ficar apertando code runner do vscode.</p>
-                        <p><b>Dificuldades: </b>Durante a criação do algoritmo, travei bastante no for, estava tentando mutar uma str ao invés de cirar uma nova. Ainda estou tendo um pouco de dificuldade em continues e breaks, mas tenho melhorado minha velocidade de codagem</p>
+
+                        <p class="obs">
+                            <b>Observação: </b>Programa codado para simular um jogo da forca, utilizado variáveis de controle para saídas e entradas no while, tenho tentado efetuar esse controle na maioria dos programas e exercicios que tenho criado para implementação em outros programas, sem a necessidade de ficar apertando code runner do vscode.<br>
+                            <b>Dificuldades: </b>Durante a criação do algoritmo, travei bastante no for, estava tentando mutar uma str ao invés de cirar uma nova. Ainda estou tendo um pouco de dificuldade em continues e breaks, mas tenho melhorado minha velocidade de codagem
+                        </p>
                     </div>
                 
-                <h3>Calculador de Notas</h3>
+                <h3 class="topico">Calculador de Notas</h3>
                     <div>
                         <p>Calculadora de média de notas inputadas, utilizado Mutação de lista e iteração de listagem.</p>
                         <pre><code>
@@ -1032,8 +1036,10 @@
                                     print('Opção invalida')
 
                         </code></pre>
-                        <p><b>Observação: </b>Utilizado lista para inputar as notas e guardar as informações, utilizado sistema de consolidação para efetuar a media da nota. Aplicativo deixa inputar somente numeros. </p>
-                        <p><b>Dificuldades: </b>Aqui não tive dificuldades consideraveis como os outros códigos, anotado para mostrar evolução</p>
+                        <p class="obs">
+                            <b>Observação: </b>Utilizado lista para inputar as notas e guardar as informações, utilizado sistema de consolidação para efetuar a media da nota. Aplicativo deixa inputar somente numeros.<br>
+                            <b>Dificuldades: </b>Aqui não tive dificuldades consideraveis como os outros códigos, anotado para mostrar evolução.
+                        </p>
                     </div>
      
                 
