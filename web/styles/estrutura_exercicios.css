@@ -10,6 +10,7 @@
 
 .exercicio:hover {
     background-color: rgba(32, 37, 33, 0.185);
+    border-radius: 15px;
 }
 
 .link_exercicio {
@@ -17,6 +18,7 @@
     text-decoration: none;
     color: black;
     align-items: center;
+    
 }
 
 
@@ -28,3 +30,15 @@
 
 
 /* ---------------------- Estrutura Exercicios ----------------------*/
+
+/* -------------------------- StoryTelling --------------------------*/
+
+.top_list {
+    margin-top: 10px;
+}
+
+.lista_hub {
+    list-style-type: upper-roman;
+}
+
+/* -------------------------- StoryTelling --------------------------*/

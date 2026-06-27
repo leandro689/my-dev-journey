@@ -2,15 +2,18 @@
 <html lang="pt-br">
     <head>
         <link href="assets/img/Program_icon.png" rel="icon">
-        <link rel="stylesheet" href="styles/estrutura_base_anotacoes_projetos.css">
         <link rel="stylesheet" href="styles/estrutura_exercicios.css">
+        <link rel="stylesheet" href="styles/global.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Saira:wght@500;600;700;800&display=swap">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Dev Journey | Estudos e Projetos</title>
     </head>
     <body>
         <header id="menu_estudos">
-            <h1>My Dev Journey</h1>
+            <h1 class="titulo_pag">My Dev Journey</h1>
             <nav id="linguagens">
                 <ul class="cab_ling">
                     <li class="linguagem">
@@ -36,52 +39,85 @@
                 </ul>
             </nav>
 
-
         </header>
 
-        <section>
-            <div class="secao">
-                <div class="top_align">
-                    <h2>Estudar</h2>
-                    <p>
-                        N8N - Agente de IA - Curso comprado <br>
-                        IA Claude Code - Verificar nova IA Claw Code ou estudar o Git do OpenClaude<br>
-                        JavaScript <br>
-                        TypeScript <br>
-                        SQL<br>
-                        Dados
-                    </p>
-                        <ul>
-                            <li>Data Warehouse</li>
-                            <li>Data Marts</li>
-                        </ul>
-                    <hr>
-                    <h2 class="topico">Estruturar</h2>
-                    <h3>Anotações gerais:</h3>
-                    <p>
-                    Segue abaixo comandos utilizados durante o curso que servem para outras coisas fora das linguagens.<br>
-                        <b>cd </b> Utilizado para mudar a pasta atual do terminal<br>
-                        <b>cls </b> Utilizado para limpar o terminal, similar ao comando clear<br>
-                    </p>
+        <section class="secao">
+            <div class="top_align">
+                <h2 class="titulo_secao">Estudar</h2>
+                <p>
+                    N8N - Agente de IA - Curso comprado <br>
+                    IA Claude Code - Verificar nova IA Claw Code ou estudar o Git do OpenClaude<br>
+                    JavaScript <br>
+                    TypeScript <br>
+                    SQL<br>
+                    Dados:
+                </p>
+                    <ul style="list-style-position: inside;">
+                        <li>Data Warehouse</li>
+                        <li>Data Marts</li>
+                    </ul>
+                <hr>
+                <h2 class="topico">Estruturar</h2>
+            </div>
+            
+        </section>
+
+        <section class="secao">
+            <div class="top_align">
+                <h2 class="titulo_secao">Anotações gerais</h2>
+
+                <p>Seção de anotações gerais, para códigos, comandos ou insights que serverm para toda a jornada.</p>
+
+                <h3 class="topico">Comandos</h3>
+
+                <p>
+                    <b class="sub_top">cd</b>: Utiliza-se para selecionar pasta no terminal<br>
+                    <b class="sub_top">cls</b>: Utiliza-se para limpar o terminal, similar ao comando clear
+                </p>
+
+                <h3 class="topico">Sugestçoes</h3>
+                <p><b class="sub_top">Documentação</b>: Toda linguagem de programação tem alguma documentação, importante ter facil acesso para seu progresso, ou consultas.</p>
+
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="top_align">
+                <h2 class="titulo_secao">Projetos</h2>
                     
+                <ol class="lista_padrao">
+                    <li>
+                        <h3 class="top_list">42 São Paulo</h3>
+                        <p>Estudar para a escola 42 São Paulo - Escola de tecnologia, renomada e bem avaliada para areas de tecnologia.<br>
+                            <b>Checkpoint: </b>Ultimo levantamento, foi pesquisar sobre o assunto.<br>
+                            <b>Andamento: </b>Continuar estudando programação, lógica e acompanhar candidatura para o projeto. (Se possivel, se candidatar até 11/26) 
+                        </p>
+                    </li>
+
+                    <li class="top_list">
+                        <h3>Bot SQL+PY - Multplataforma</h3>
+                        <p>Bot para amigos proximos, para funções divertidas e descontraidas.<br>
+                            <b>Checkpoint: </b>Levantamento de ideias e funções.<br>
+                            <b>Andamento: </b>Escolher nome para o bot.<br>
+                        </p>
+                            
+                    </li>
+
+                    <li class="top_list">
+                        <h3>Maturidade tecnlogica empresa</h3>
+                        <p>Projeto para ingressar plataforma de ensinos tecnologicos na empresa onde trabalho.<br>
+                            <b>Checkpoint: </b>28.05.2026 - Estrutura do projeto em notion<br>
+                            <b>Andamento: </b>Pesquisar pontos apontados dentro do projeto.<br>
+                        </p>
+                    </li>
+                </ol>
+
                 </div>
-            </div>
         </section>
 
-        <section>
-            <div class="secao">
+        <section class="secao">
                 <div class="top_align">
-                    <h2>Projetos</h2>
-                    <p> <b style="font-size: 28px; text-decoration: underline;">42 SÃO PAULO</b></p>
-
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="secao">
-                <div class="top_align">
-                    <h2>Exercícios</h2>
+                    <h2 class="titulo_secao">Exercícios</h2>
                     <ul class="lista_exercicios">
                         <li class="exercicio">
                             <a href="https://leandro689.github.io/my-dev-journey/web/pages/python/#:~:text=Calculadora%20de%20IMC,efetuar%20o%20calculo" target="_blank" class="link_exercicio">
@@ -267,16 +303,15 @@
                     </ul>
 
                 </div>
-            </div>
         </section>
-        <section>
-            <div class="secao">
+
+        <section class="secao">
                 <div class="top_align">
-                    <h2>Storytelling</h2>
-                    <ol class="topico">
+                    <h2 class="titulo_secao">Storytelling</h2>
+                    <ol class="lista_hub">
 
                         <li>
-                            <h3>Início da jornada — 02/2026</h3>
+                            <h3 class="top_list">Início da jornada — 02/2026</h3>
                             <p>
                                 Iniciei meus estudos em programação com foco em migrar para a área de dados dentro da empresa.
                                 Já possuía uma noção básica de lógica de programação por estudos anteriores.
@@ -285,7 +320,7 @@
                         </li>
 
                         <li>
-                            <h3>Primeiros fundamentos</h3>
+                            <h3 class="top_list">Primeiros fundamentos</h3>
                             <p>
                                 Estudo de tipos de dados, estruturas condicionais, entrada e saída e laços de repetição.
                                 Desenvolvimento de exercícios básicos como calculadora de IMC e programas com validação de entrada.
@@ -293,7 +328,7 @@
                         </li>
 
                         <li>
-                            <h3>Primeiro contato com lógica de sistema (Dia 55)</h3>
+                            <h3 class="top_list">Primeiro contato com lógica de sistema (Dia 55)</h3>
                             <p>
                                 Desenvolvimento de sistema simples de autenticação com validação de usuário e senha utilizando while e if.
                                 Primeiro contato com lógica de funcionamento de sistemas reais.
@@ -301,7 +336,7 @@
                         </li>
 
                         <li>
-                            <h3>Evolução em loops e manipulação de dados (Dia 61+)</h3>
+                            <h3 class="top_list">Evolução em loops e manipulação de dados (Dia 61+)</h3>
                             <p>
                                 Introdução ao for in, manipulação de índices e strings, contadores e acumuladores.
                                 Exercícios envolvendo lógica com repetição e tratamento de dados.
@@ -309,7 +344,7 @@
                         </li>
 
                         <li>
-                            <h3>Introdução ao front-end (Dia 62)</h3>
+                            <h3 class="top_list">Introdução ao front-end (Dia 62)</h3>
                             <p>
                                 Tentativa de recriação da interface inicial da Netflix utilizando HTML e CSS.
                                 Aprendizado em layout com flexbox, alinhamento e organização de conteúdo.
@@ -317,7 +352,7 @@
                         </li>
 
                         <li>
-                            <h3>Projeto: Jogo da Forca (Dia 63)</h3>
+                            <h3 class="top_list">Projeto: Jogo da Forca (Dia 63)</h3>
                             <p>
                                 Desenvolvimento de jogo completo com controle de estado, validação de entradas e uso de loops.
                                 Principal aprendizado: strings são imutáveis e devem ser reconstruídas a cada interação.
@@ -326,7 +361,7 @@
                         </li>
 
                         <li>
-                            <h3>Consolidação de lógica e listas (Dia 70 — 16/04/2026)</h3>
+                            <h3 class="top_list">Consolidação de lógica e listas (Dia 70 — 16/04/2026)</h3>
                             <p>
                                 Estudo de listas com append, pop e manipulação por índice.
                                 Desenvolvimento de sistemas como lista de compras e carrinho de compras com controle de fluxo,
@@ -335,17 +370,17 @@
                         </li>
 
                         <li>
-                            <h3>Aprimoramento Hub de estudos (Dia 71 - 17/04/2026)</h3>
+                            <h3 class="top_list">Aprimoramento Hub de estudos (Dia 71 - 17/04/2026)</h3>
                             <p>Substituídos os divs do site estruturado para anotações e registros de estudos, por tags nav para abas de navegação. A lista de exercícios que era separada por divs agora foi estruturada em listas não ordenadas. </p>
                         </li>
 
                         <li>
-                            <h3>Estudo de exercício PY e início de organização em Git e GitHub (Dia 79 - 24/04/2026)</h3>
+                            <h3 class="top_list">Estudo de exercício PY e início de organização em Git e GitHub (Dia 79 - 24/04/2026)</h3>
                             <p>Realizado um exercício de média de notas com py, onde o usuário insere as notas e o programa mostra média, maior e menor nota; Início em Git e GitHub, reorganizando projetos, exercícios e estudos.</p>
                         </li>
 
                         <li>
-                            <h3>Estruturação do projeto e padronização de CSS (Dia 82 — 27/04/2026)</h3>
+                            <h3 class="top_list">Estruturação do projeto e padronização de CSS (Dia 82 — 27/04/2026)</h3>
                             <p>
                                 Estruturação do projeto "my-dev-journey" com organização de pastas voltada para versionamento no GitHub,
                                 separando assets, páginas e estilos para melhor escalabilidade e manutenção.<br>
@@ -361,7 +396,7 @@
                         </li>
                         
                         <li>
-                            <h3>Evolução em versionamento e refatoração de código (Dia 85 - 30/04/2026)</h3>
+                            <h3 class="top_list">Evolução em versionamento e refatoração de código (Dia 85 - 30/04/2026)</h3>
                             <p>
                                 Aprofundamento nos estudos de Git e GitHub, aprendendo novos comandos como pull, clone, mv, rm, reset e diferentes formas de checkout, ampliando o controle sobre versionamento e histórico de alterações.<br>
                                 Refatoração do sistema de carrinho de compras em Python, com aplicação do enumerate para melhoria de legebilidade, ajustes de UX na exibição dos itens e correção de bugs relacionados à validação de índices.<br>
@@ -371,11 +406,11 @@
                         </li>
 
                         <li>
-                            <h3>Refinamento visual e padronização de componentes (Dia 92 — 19/05/2026)</h3>
+                            <h3 class="top_list">Refinamento visual e padronização de componentes (Dia 92 — 19/05/2026)</h3>
                             <p>
                                 Implementação de componentes visuais reutilizáveis no projeto “my-dev-journey”, incluindo criação da classe .obs para padronização visual de observações técnicas dentro dos hubs de estudo.<br>
                                 Aprimoramento da estilização das páginas com uso de border-radius, alinhamento de listas dentro da box model e redução de elementos "tag br" desnecessários, focando em organização estrutural e separação entre conteúdo e estilização.<br>
-                                Principal aprendizado:<br>
+                                <b>Principal aprendizado:</b><br>
                                 diferença entre estilos locais e estilos reutilizáveis, iniciando padronização visual do projeto e melhor organização do CSS global.
                             </p>
                         </li>
@@ -383,8 +418,8 @@
                     </ol>
 
                 </div>
-            </div>
         </section>
     </body>
 
 </html>
+

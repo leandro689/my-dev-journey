@@ -2,8 +2,11 @@
 <html lang="pt-BR">
     <head>
         <link href="../../assets/img/Python-logo-notext.svg.png" rel="icon">
-        <link rel="stylesheet" href="../../styles/estrutura_base_anotacoes_projetos.css">
+        <link rel="stylesheet" href="../../styles/global.css">
         <link rel="stylesheet" href="../../styles/font_py.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Saira:wght@500;600;700;800&display=swap">
         <meta charset="utf-8">
         <meta name="viewport" content ="width=device-width, initial-scale= 1.0"> 
         <title>Estudos Python</title>
@@ -21,7 +24,7 @@
                    
                 </div>
                 <div class="titulo_site">
-                    <h1>Estudos Python</h1>
+                    <h1 class="titulo_pag">Estudos Python</h1>
                 </div>
                 <div class="align_right"></div>
             
@@ -66,118 +69,353 @@
                     </li>        
                 </ul>
             </nav>
-        <section>
+        <section class="secao">
             
-            <div class="secao">
-                <div class="top_align">
-                <h2>Anotações</h2>
-                <h3 class="topico">funções</h3>
-                <p>
-                    <b class="sub_top">'#'</b> Cerquilha, utilizado para comentar a linha do código. <br>
-                    <b class="sub_top">'''-''' e """-"""</b>Aspas simples e aspas dessa forma podem ser utilizadas como caixa de comentário (Docstring), funcionam em mais de uma linha de uma vez.<br>
-                    
-                    
-                    <b class="sub_top">print</b> A função print, utilizamos para imprimir algo na tela, seja uma variável, uma string, um número, algum objeto do py<br>
-                </p>
-                        <ul>
-                            <li>Sep - dentro do print, serve para definir um caracter de separação - Ex: print(arg1,arg2,arg3) sem o sep, teremos o seguinte resultado: arg1 arg2 arg3</li>
-                            Caso tenha o o sep no print: print(arg1,arg2,arg3, sep='-'), teremos o seuinte resultado: arg1-arg2-arg3</li>
-                            <li>end='' - dentro do print ele define qual será o final do print, todo print ele ja tem como final um "enter", se definirmos com o end ele não dará o enter e colocará o caracter selecionado<br>
-                            <b>Exemplo: sem end</b><br>
-                            print(arg1)<br>
-                            print(arg2)<br>
-                            <b>Resultado:</b><br>
-                            arg1<br>
-                            arg2<br>
-                            <b>Exemplo: com end</b><br>
-                            print(arg1,end='-')
-                            print(arg2)<br>
-                            <b>Resultado:</b><br>
-                            arg1-arg2                                      
+            <div class="top_align">
+                <h2 class="titulo_secao">Anotações</h2>
+
+                    <h3 class="topico">Palavras-Chave / Sintaxe</h3>
+
+                        <ul class="lista_padrao">
+
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">if</strong>
+                                - estrutura de controle condicional.
                             </li>
-                            <li><b>\</b> utilizado para escapar algo dentro de um texto, por exemplo se queremos colocar algo entre "" dentro deuma string, quando colocamos entr \\, o py vai entender que faz parte do texto e não vai considerar a "" como final da primeira string </li>
+                            
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">elif</strong>
+                                - complemento de if. 
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">else</strong>
+                                - complemento final do if.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">try</strong>
+                                - Utiliza para tentar executar algo dentro do código. Caso não consiga, ele vai jogar no Except.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">except</strong>
+                                - Utilizado para tratamento de erro dentro do try. 
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">pass</strong>
+                                - Utiliza-se para ignorar condições, caso não seja estruturado nada entre os blocos try ou if, pode utilizar o pass para ignorar o erro que seria devolvido.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">while</strong>
+                                - Laço dentro do Python, enquanto a condição a ele estipulada for verdadeira, o código vai continuar se repetindo. Pode sair com o Break ou com a alteração da condição a ele estipulada.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">break</strong>
+                                - Pode-se utilizar para quebrar algum algorimto ou algum laço.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">continue</strong>
+                                - Utiliza-se para pular uma parte do algoritmo ou algum bloco. 
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">and</strong>
+                                - Mesma lógica da porta and.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">not</strong>
+                                - Iverte a condição ou situação de verdadeiro ou falso do objeto.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">or</strong>
+                                - Mesma lógica da porta or
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">for</strong>
+                                - Utiliza-se em objetos iteraiveis, fazendo o código passar em item por item do objeto.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">del</strong>
+                                - Utilizada para remover itens de uma estrutura ou deletar uma variavel.
+                            </li>
+                            <!-- <li class="sub_top">
+                                <strong class="destaque_sub_top">anotação</strong>
+                                - Descrição
+                            </li> -->
                         </ul>
-                <p>            
-                    <b class="sub_top">str int float bool</b> São formatos do py, str é para texto, int é para números inteiros, float são para números decimais e bool para formato booleano, os comandos podem ser utilizados para conversão tbm <br>
-                    <b class="sub_top">type</b> type te devolve o formato atual do objeto<br>
-                    <b class="sub_top">input</b> Utilizado para inputar informações em variáveis ou em objetos no código.<br>
-                    <b class="sub_top">if, elif e else</b> Uma das funções mais utilizadas, a função que nos move durante o código, igual o se do excel<br>
-                    <b class="sub_top">id</b> O id mostra pra gente a identidade do objeto dentro da memória do py<br>
-                    <b class="sub_top">isdigit</b> Função pra verificar se a string é número<br>
-                    <b class="sub_top">try e except</b> Funciona de forma semelhante ao if, porém focado em tratamento de erros, porém o try, ele tenta executar o código ou algoritmo, caso haja algum erro, ele joga o código direto no except.<br>
-                    <b class="sub_top">pass</b> Função para ignorar a condição, por exemplo, vc não coda entre os blocos if ou try, se você colocar o pass, ele ignora o erro e continua o cod. <br>
-                    <b class="sub_top">documentação:</b> https://docs.python.org/pt-br/3/library/stdtypes.html<br>
-                    <b class="sub_top">Dados imutáveis</b> str, int, float, bool. São objetos imutaiveis no python, caso eu queira mudar, eu tenho que montar outra variável<br>
-                    <b class="sub_top">while</b> função que se repete dentro do código a não ser que tenha uma saída. Por exemplo um <b class="sub_top">break</b> ou uma variável alterada que te tira do while<br>
-                    <b class="sub_top">.lower:</b> converte a str para letra minúscula<br>
-                    <b class="sub_top">.startswith</b> Verifica a inicial da str<br>
-                    <b class="sub_top">.endswith</b> Verifica o final da str<br>
-                    <b class="sub_top">and</b> Mesma lógica da porta or, compara duas variáveis ou mais, caso qualquer uma seja verdadeira, a função se torna verdadeira.<br>
-                    <b class="sub_top">not</b> Mesma lógica da porta not, ele inverte a função, se a função procura algo verdadeiro o not procura algo falso.<br>
-                    <b class="sub_top">.isdigit()</b> Utilizado para verificar se a entrada é um número ou não.<br>
-                    <b class="sub_top">len()</b> Utilizado para converter str em número, ele conta a quantidade de caracteres que tem uma str.<br>
-                    <b class="sub_top">int()</b> Converte a entrada de str para número, caso não for número ele retorna erro. <br>
-                    <b class="sub_top">for: </b>Função em loop, utilizada assim como o while, porém com ele utiliza-se de forma mais precisa, o while, ele funciona só enquanto função bool vinculada a ele for True. <br>
-                    <b class="sub_top">Range(start, stop, step) </b>Utiliza-se para criar uma distancia a ser percorrida, dentro dos () podemos definir onde ele vai começar, onde vai parar e de quanto em quanto ele vai operar. <br>
-                    <b class="sub_top">[] - lista</b> Utiliza-se para listas, listas são mutáveis dentro do py, Criar, remover, alterar itens de dentro dela.<br>
-                    <b class="sub_top">.append()</b> Utilizado para adicionar itens na lista.<br>
-                    <b class="sub_top">.pop()</b> Remove o ultimo valor da lista. Pode ser inserido dentro de uma variável para mostar qual item foi removido. Exemplo lista [0,1,2,3] Variável - item_removido = lista.pop() - essa variável vai tirar o ultimo item da lista no caso o 3 e a variável item_removida é igual a 3<br>
-                    <b class="sub_top">del</b> Utilzado para remover um determinado item da lista<br>
-                    <b class="sub_top">clear</b> Utilizado para limpar a lista<br>
-                    <b class="sub_top">insert </b>Utilizado para inserir um item na lista no inicio da lista, utilizado em listas pequenas, não recomendado em listas grandes, pois ele sempre vai empurrar os outros items para frente na lista, assim processando mais energia<br>
-                    <b class="sub_top">.extend()</b> Método utilizado para extender uma lista<br>
-                    <b class="sub_top">.copy()</b> Método utilizado para copiar uma lista e manter as duas na memória, assim garantindo que a primeira não seja mutada<br>
-                    <b class="sub_top">.split()</b> Método que pode ser utilizado para fatiar srt(frases) por caracteres específicos.<br>
-                    <b class="sub_top">.sprit()</b> Método utilizado para tirar os espaços do começo e final da str. (pode-se colocar r ou l no começo para diferenciar direita ou esquerda).<br>
-                    <b class="sub_top">.join()</b> Método de string, utilizado para separar objetos iretáveis.<br>
-                    <!-- <b class="sub_top"></b><br> -->
+
+                        <h4 class="titulo_sub_topicos">Comentários</h4>
+
+                            <ul class="lista_padrao">
+
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">#</strong>
+                                    - Utiliza-se para comentar a linha dentro do código do Python.
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">'''-''' e """-"""</strong>
+                                    - Aspas simples e aspas dessa forma podem ser utilizadas como caixa de comentário (Docstring), funcionam em mais de uma linha de uma vez.
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">Sintaxes de str</strong>
+                                    - <strong class="destaque_sub_top">\</strong>: Utilizado para escapar um valor dentro de uma str, exemplo print("\"teste\"");
+                                </li>
+
+                            </ul>
 
 
-
-                </p>    
-                <h3 class="topico"> Operadores</h3>
-                <p>
-                    Operadores são funções dentro do py, que fazem com que manipulemos os objetos dentro do código. Alguns deles tem niveis de força dentro do código. O py, sempre vai executar o código de cima pra baixo, da direita pra esquerda, os operadores nos ajudam a a decidir o que vai ser executado primeiro dentro da linha do código. Por exemplo:<br>
-                    print(arg1+arg2*(arg1+arg2)) - aqui o parenteses será executado primeiro, depois a multiplicação e depois a soma na linha código.<br>
-                    
-                    
-                    <b class="sub_top">()<sup>niv1</sup></b><br>
-                    <b class="sub_top">**<sup>niv2</sup></b><br>
-                    <b class="sub_top">% <sup>nv3</sup></b> modulo - utilizado em contas para mostrar a sobra de uma divisão<br>
-                    <b class="sub_top">*<sup>nv3</sup></b>multiplicação<br>
-                    <b class="sub_top">/<sup>nv3</sup></b>divisão<br>
-                    <b class="sub_top">//<sup>nv3</sup></b>divisão inteira<br>
-                    <b class="sub_top">+<sup>nv4</sup></b> adição ou concatenação<br>
-                    <b class="sub_top">-<sup>nv4</sup></b> subtração<br>
-                </p>
-
-                    
-                <h3 class="topico"> Interpolação de str <b class="sub_top">%</b></h3>
-                <p>Interpolação são formas de converter str, é utilizada em códigos antigos, o PY 3.6 utiliza mais o <b class="sub_top">(f'')</b>, utilizamos também para tratar o dado.</p>   
-                
-                <p>
-                    <b class="sub_top">s</b> Converte para str<br>
-                    <b class="sub_top">d e i</b> Converte pra inteiro<br>
-                    <b class="sub_top">f</b> Converte para float.<br>
-                    <b class="sub_top">x e X</b> Converte para Hexadecimal.<br>
-                </p>
-                    
-                    
-                <h3 class="topico">Índice</h3>
-                    <p>Índices, utilizamos para pegar um dado especifico de uma informação, sendo uma STR. Com o índice conseguimos, fatiar strs e exibir só o necessário.<br>
+                    <h3 class="topico">Funções</h3>
                         
-                        <b class="sub_top">Exemplo:</b>
-                    </p>
-                    <pre><code>
-                        nome = input('Digite seu nome: ')
-                        data_n = input('Digite sua data de nascimento: ')
+                        <ul class="lista_padrao">
 
-                        concat = nome + data_n
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">print()</strong>
+                                - Utilizamos para imprimir algo no console, podende ser variáveis, strings, números ou  algum objeto do Python.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">input()</strong>
+                                - Utiliza-se para cadastrar dados em varíaveis ou objetos no código.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">id()</strong>
+                                - Utilizado para mostrar o id de um objeto na memoria dentro do Python.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">len()</strong>
+                                - Conta a quantidade caracteres dentro de um objeto. 
+                            </li>
 
-                        print(
-                            f'Seu nome é "{concat[:len(nome)]}"
-                            e nasceu em "{concat[len(nome):]}"'
-                        )
+                        </ul>
+
+                    <h3 class="topico">Métodos</h3>
+                        
+                        <ul class="lista_padrao">
+
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">.isdigit()</strong>
+                                - Verifica se a variável é um digito.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">.lower()</strong>
+                                - utilizado para converter todas as letras de uma str em minúsculo.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">.starswith()</strong>
+                                - Verifica como começa o objeto selecionado.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">.endswith()</strong>
+                                - Verifica como termina o objeto selecionado.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">.append()</strong>
+                                - Utilizado para adicionar itens dentro do dado lista.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">.pop()</strong>
+                                - Remove o ultimo item dentro do dado lista.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">.clear()</strong>
+                                - Utilizado para limpar uma lista.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">.insert(posição, item_inserido)</strong>
+                                - Utiliza-se para inserir itens em uma lista, com ele, você consegue escolher a posição que o mesmo vai se inserir. (Ponto de atenção, inserir intens no meio da lista ou no início de uma lista, faz com que o sistema empurre todos os outros, um por um, assim então necessitando de maior processamento).
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">.extend()</strong>
+                                - Utilziado para extender uma lista.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">.copy()</strong>
+                                - Utilzado para copiar uma determinada lista e manter uma cópia na memória, garantindo que a primeira não seja mutada.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">.split(r ou l)</strong>
+                                - Utiliza-se para fatiar uma str por um caracter especifico, na maioria das vezes sendo frases. Pode utilizar o R 
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">.sprit(r ou l)</strong>
+                                - Utilizado para remover espaços do começo ou do final de uma str. Utiliza r ou l para definir qual lado queremos atuar.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">.join()</strong>
+                                - Utilizamos para separar objetos iteráveis. 
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">.replace(o que vai substituir, substituir por)</strong>
+                                - Utilizado para substituir caracteres dentro de str, por exemplo cpf = "111.111.111-11", cpf.replace(".",'') retorna cpf 111111111-11. Podemos chamar várias vezes esse método dentro de uma str.                                
+                            </li>
+
+                        </ul>
+                    
+                    <h3 class="topico">Parâmetros</h3>
+                        
+                        <ul class="lista_padrao">
+
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">sep=""</strong>
+                                - Utilizado na função print para estipularmos um padrão de separação entre valores.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">end=""</strong>
+                                - Utilizado para definir como o print acaba, antes de mostrar outro objeto. (Todo print ja termina com um "enter" natural, com o end, conseguimos alterar isso.)
+                            </li>
+
+                        </ul>
+
+                    <h3 class="topico">Tipos de dados</h3>
+                        
+                        <ul class="lista_padrao">
+
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">str - imutável</strong>
+                                - São strings, geralmente utilizadas para texto.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">int - imutável</strong>
+                                - São dados de números inteiros.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">float - imutável</strong>
+                                - São dados de números decimais.
+
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">bool - imutável</strong>
+                                - São dados Boleanos (verdadeiro ou falso).
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">lista [objeto1, objeto2, objeto 3]</strong>
+                                - Compilado de dados dentro de um unico objeto.
+                            </li>
+
+                        </ul>
+
+                    <h3 class="topico">Classes</h3>
+
+                        <ul class="lista_padrao">
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">int()</strong>
+                                - Utilizada para converter um obj em número inteiro.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">type()</strong>
+                                - Utilizada para mostrar qual o tipo do dado do objeto atual.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">str()</strong>
+                                - Utilizada para converter o dado para o tipo String.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">float()</strong>
+                                - Utilizada para converter o dado para o tipo flutuante.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">bool()</strong>
+                                - Utilizado para converter o dado para o tipo Boleano
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">range(star, stop, step)</strong>
+                                - utilizado para fazer o código correr uma certo periodo de algum objeto ou valor. Star - onde começa. Stop - onde para. Stet - pra determinar de quanto em quanto.
+                            </li>
+                        </ul>
+                    
+                    
+                    <h3 class="topico">Módulos</h3>
+                        
+                        <ul class="lista_padrao">
+                            
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">random</strong>
+                                - Utilizado para criar coisas randomicas ou aleatórias
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">sys</strong>
+                                - 
+                            </li>
+
+                        </ul>
+                    
+                    <h3 class="topico">Operadores</h3>
+
+                    <p>
+                        Operadores são funções dentro do py, que fazem com que manipulemos os objetos dentro do código. Alguns deles tem niveis de força dentro do código. O py, sempre vai executar o código de cima pra baixo, da direita pra esquerda, os operadores nos ajudam a a decidir o que vai ser executado primeiro dentro da linha do código. Por exemplo:<br>
+                        print(arg1+arg2*(arg1+arg2)) - aqui o parenteses será executado primeiro, depois a multiplicação e depois a soma na linha código.<br>
+                    </p>    
+                        
+                        <ul class="lista_padrao">
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">()<sup>niv1</sup></strong>
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">**<sup>niv2</sup></strong>
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">%<sup>niv3</sup></strong>
+                                - Utilizado em cálculos para mostrar a sobra de uma divisão.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">*<sup>niv3</sup></strong>
+                                - Multiplicação.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">/<sup>niv3</sup></strong>
+                                - Divisão.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">//<sup>niv3</sup></strong>
+                                - Divisão inteira.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">+<sup>niv4</sup></strong>
+                                - Soma.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">-<sup>niv4</sup></strong>
+                                - subtração.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">Operação ternária</strong>
+                                - (valor) if (condição) else (outro valor) 
+                            </li>
+                        </ul>
+                        
+                    <h3 class="topico"> Interpolação de str (%)</h3>
+                    <p>Interpolação são formas de converter str, é utilizada em códigos antigos, o PY 3.6 utiliza mais o <b class="sub_top">(f'')</b>, utilizamos também para tratar o dado.</p>   
+                    
+                        <ul class="lista_padrao">
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">s</strong>
+                                - Converte para str
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">d e i</strong>
+                                - Converte para inteiro
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">f</strong>
+                                - Converte para float.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">x e X</strong>
+                                - Converte para Hexadecimal.
+                            </li>
+                        </ul>                
+                        
+                    <h3 class="topico">Índice</h3>
+                        <p>Índices, utilizamos para pegar um dado especifico de uma informação, sendo uma STR. Com o índice conseguimos, fatiar strs e exibir só o necessário.<br>
+                            
+                            <b class="sub_top">Exemplo:</b>
+                        </p>
+                        <pre><code>
+                            nome = input('Digite seu nome: ')
+                            data_n = input('Digite sua data de nascimento: ')
+
+                            concat = nome + data_n
+
+                            print(
+                                f'Seu nome é "{concat[:len(nome)]}"
+                                e nasceu em "{concat[len(nome):]}"'
+                            )
                 
 
                     </code></pre>
@@ -188,53 +426,73 @@
                     
 
 
-                <h3 class="topico"> Contadores Aritméticos </h3>
-                    <p> Contadores aritimeticos são utlizados para acumular ou contar valores.<br>
-                    
-                    <b>Operadores de atribuição</b><br>
-                    Os operadores sempre vão fazer a função deles<br>
-                    <b class="sub_top">Exemplo:</b> variável = 10, variável += 4, teremos o valor 14. Isso ocorreu por conta do acumulo aritimetico (10+4). Essas funções são muito utilizadas em laço pra agregar valor a uma variável ou mais.<br>
-                    
-                    <b class="sub_top">=</b> Atribui um valor a uma variável<br>
-                    <b class="sub_top">+=</b> Soma valores, ou concatena (em casos de string)<br>
-                    <b class="sub_top">*=</b> Multiplica valores.<br>
-                    <b class="sub_top">/=</b> Divide o valor, converte o item para float.<br>
-                    <b class="sub_top">//=</b> Divide o valor, e traz o valor inteiro, exemplo: 10 // 4 traria um 2.<br>
-                    <b class="sub_top">**= </b><br> Exponencia o valor. <br> 
-                    <b class="sub_top">%=</b> Traz a sobra de uma divisão<br>
-                    
-                    </p>
-                
-                <h3 class="topico">Empacotamento e desempacotamento</h3>
-                    <p>utiliza para desempacotar valores dentro de uma lista.<br>
-                        Para desempacotar uma lista utilizamos variáveis, assim então atribuindo valores as mesmas. <br>
-                        No caso de querer desempacotar somente uma variável, precisamos atribuir uma variável para o restante dos valores da lista, e para isso utilizamos o "<b>*</b>" junto a variável.<br>
-                        <b>Exemplo:</b> *resto</p>
-                
+                    <h3 class="topico">Contadores Aritméticos</h3>
+                        <p>Contadores aritimeticos são utlizados para acumular ou contar valores.</p>
+                        <p>Os operadores sempre vão fazer a função deles.</p>
+                        <b class="sub_top">Exemplo:</b> variável = 10, variável += 4, teremos o valor 14. Isso ocorreu por conta do acumulo aritimetico (10+4). Essas funções são muito utilizadas em laço pra agregar valor a uma variável ou mais.<br>
+                        
 
-                <h3 class="topico">Classes - excepet</h3>
-                    <p>Podemos utilizar classes para tratar erros dentro do try/except<br>
-                        <b>ValueError: </b>Utiliza-se para um valor incorreto, conseguimos utilizar em conversões.<br>
-                        <b>IndexError: </b>Utiliza-se para erros em índices, quando por exemplo, tentamos excluir um item de uma lista e utilizamos o ídice incorreto para isso.<br>
-                        <b>Exception: </b>Utiliza-se para quando não sabemos qual erro pode dar dentro do try.<br>
-                    </p>
+                        <ul class="lista_padrao">
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">=</strong>
+                                - Utilizado para atribuir valor a uma variavel
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">+=</strong>
+                                - Soma valores, ou concatena (em casos de string).
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">*=</strong>
+                                - Multiplica valores.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">/=</strong>
+                                - Divide o valor e converte o item para float.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">//=</strong>
+                                - Divide o valor, e traz o valor inteiro, exemplo: 10 // 4 = 2 
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">**=</strong>
+                                - Exponencia o valor.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">%=</strong>
+                                - Traz a sobra de uma divisão.
+                            </li>
+                        </ul>
+                    
                 
-                <h3 class="topico">Imprecisão ponto flutuante</h3>
-                    <p>Em algumas linguágens de programação, é utilizado um sistema chamado "Double-precision floating-point format IEEE 754."<br>
-                        Em somas de números flutuantes, ao efetuarmos o cálculo por exemplo de 0.1 + 0.7, o resultado seria de 0.7999999.<br>
-                        Existem algumas formas de contornar essa situação, uma delas é utilizando o f'{variavel:.f}'.<br>
-                        A função round() que arredonda o número decimal.<br>
-                        Import decimal do Python, esse é utilizado somente para números flutuantes que precisamos de dados extremamente precisos. decimal.Decimal('0.1') </p>
+                    <h3 class="topico">Empacotamento e desempacotamento</h3>
+                        <p>utiliza para desempacotar valores dentro de uma lista.<br>
+                            Para desempacotar uma lista utilizamos variáveis, assim então atribuindo valores as mesmas. <br>
+                            No caso de querer desempacotar somente uma variável, precisamos atribuir uma variável para o restante dos valores da lista, e para isso utilizamos o "<b>*</b>" junto a variável.<br>
+                            <b>Exemplo:</b> *resto</p>
+                    
+
+                    <h3 class="topico">Classes - excepet</h3>
+                        <p>Podemos utilizar classes para tratar erros dentro do try/except<br>
+                            <b>ValueError: </b>Utiliza-se para um valor incorreto, conseguimos utilizar em conversões.<br>
+                            <b>IndexError: </b>Utiliza-se para erros em índices, quando por exemplo, tentamos excluir um item de uma lista e utilizamos o ídice incorreto para isso.<br>
+                            <b>Exception: </b>Utiliza-se para quando não sabemos qual erro pode dar dentro do try.<br>
+                        </p>
+                    
+                    <h3 class="topico">Imprecisão ponto flutuante</h3>
+                        <p>Em algumas linguágens de programação, é utilizado um sistema chamado "Double-precision floating-point format IEEE 754."<br>
+                            Em somas de números flutuantes, ao efetuarmos o cálculo por exemplo de 0.1 + 0.7, o resultado seria de 0.7999999.<br>
+                            Existem algumas formas de contornar essa situação, uma delas é utilizando o f'{variavel:.f}'.<br>
+                            A função round() que arredonda o número decimal.<br>
+                            Import decimal do Python, esse é utilizado somente para números flutuantes que precisamos de dados extremamente precisos. decimal.Decimal('0.1') </p>
 
 
 
             </div>
-        </div>
+
         </section>
-        <section>
-            <div class="secao">
-                <div class="top_align">
-                <h2> Exercicios </h2>
+        <section class="secao">
+            <div class="top_align">
+                <h2 class="titulo_secao"> Exercicios </h2>
                 
                 <h3 class="topico"> Calculadora de IMC </h3>
                     <div>
@@ -1044,12 +1302,11 @@
      
                 
             </div>
-            </div>    
+                
         </section>
-        <section>
-            <div class="secao">
-                <div class="top_align">
-                    <h2>Pontos de atenção</h2>
+        <section class="secao">
+            <div class="top_align">
+                <h2 class="titulo_secao">Pontos de atenção</h2>
                     <h3 class="topico">Código limpo</h3>
                     <p>
                     Os códigos que utilizamos e codamos, não são para nós mesmos, geralmente codamos para outras pessoas, então a ideia é manter o código mais simples o possivel e limpo para que outras pessoas entendam o cód com maior facilidade.
@@ -1061,7 +1318,6 @@
                     <h3 class="topico">desempacotamento</h3>
                     <p>utiliza-se o <b>_</b> para sinalizarmos que é uma variável que existe, mas não será utilizada</p>
                 </div>
-            </div>
         </section>
 
 
