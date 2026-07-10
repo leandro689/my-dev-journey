@@ -66,41 +66,112 @@
             </ul>
         </nav>
 
-        <section>
-            <div class="secao">
-                <div class="top_align">
-                    <h2 class="titulo_secao">Anotações</h2>
-                        <p>
-                            <b>Repositório: </b>É onde o codigo vai ser armazenado. (projeto)<br>
-                            <b>.gitignore: </b>Arquivo recomendado pra informarmos arquivos ou pastas sensíveis que por segurança é melhor deixar fora do repositório. Podemos destacar pastas e categorias de arquivos que devem ser ignoradas pelo git.<br>
-                            <b>Branch: </b>É uma versão separada do projeto para fim de organização, utilizado para criação de novas features dentro do projeto sem trabalhar dentro do código main, assim isolando testes, correções e etc. Depois da nova feature ou atualização estiver estável unificamos a branch com a branch master.<br>
+        <section class="secao">
+            <div class="top_align">
+                <h2 class="titulo_secao">Anotações</h2>
 
-                        </p>
 
                     <h3 class="topico">Comandos</h3>
-                    <p>
-                        
-                        
-                        <b>git status</b> Mostra o status atual do git, vai mostrar se tem arquivo pra commit, se tem arquivo pra salvar e etc <br>
-                        <b>git init</b> Inicia um novo projeto git<br>
-                        <b>git add</b> Adiciona o arquivo no git<br>
-                        <b>git add .</b> Adiciona todos os arquivos dentro do projeto de uma vez só <br>
-                        <b>git commit</b> Comita os arquivos do projeto <b>Flag -m para adicionar msg</b>- Importante comentar o que você fez com esse comit<br>
-                        <b>git commit -a</b> Comita varias arquivos de uma vez <b>Flag -m para adicionar msg</b>- Importante comentar o que você fez com esse comit <br> 
-                        <b>git remote</b> mostra a origem do repo<br>
-                        <b>git push</b> salva o arquivo no repo do github
-                        <b>git pull</b> Puxa as atualizações do projeto que subiram no GitHub, geralmente utilizado em projetos em grupo, ou buscando de outra máquina<br>
-                        <b>git clone</b> Clona um repositório do GitHub, geralemte usamos quando ingressamos em um novo projeto.<br>
-                        <b>git rm</b> Deleta o arquivo do projeto, esse comando não isola o arquivo do monitoramento, ele realmente excluí do projeto.<br>
-                        <b>git log</b> Mostra as informações dos commits realizados no projeto.<br>
-                        <b>git mv</b> Permite mover e alterar o nome do arquivo. Funciona de forma similar ao ctr+x que tira o arquivo e deixa na memória até a fase de colar.<br>
-                        <b>git checkout</b> volta ao estado anterior. Precisa tomar atenção, pois depois disso não podemos utiliziar o ctrl+z.<br>
-                        O git checkout pode ser meio confuso, então o Git separou a função em <b>git switch</b> para trocar a branch, <b>git swith -c</b> para criar nova branch e <b>git restore</b> para restaurar o arquivo.<br>
-                        <b>git reset --hard</b> Volta o arquivo no tempo e apaga tudo o que foi feito. Pode-se utilizar o id do commit da versão estável para apagar todo o restante.<br>
-                        <b>git branch</b> Visualiza as branchs.<br>
-                        <b>git branch (nome)</b> Cria um novo Branch.<br>
 
-                </div>
+                        <ul class="lista_padrao">
+
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">git status</strong>
+                                - Mostra o status atual do git, mostra se tem arquivos para commit, se tem algum arquivo para salvar e etc.        
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">git init</strong>
+                                - Inicia um novo projeto git.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">git add</strong>
+                                - Adiciona o arquivo no projeto git.
+                            </li>
+                             <li class="sub_top">
+                                <strong class="destaque_sub_top">git add .</strong>
+                                - Adiciona todos os arquivos dentro do projeto de uma só vez.
+                            </li>
+                             <li class="sub_top">
+                                <strong class="destaque_sub_top">git commit</strong>
+                                - Comita os arquivos alterados do projeto, pode se utilizar a flag "<b>-m</b>" para adicionar uma mensagem no commit (Importante comentar as alterações para você ver o que foi realizado.).
+                            </li>
+                             <li class="sub_top">
+                                <strong class="destaque_sub_top">git commit -a</strong>
+                                - Comita varios arquivos de uma vez.
+                            </li>
+                             <li class="sub_top">
+                                <strong class="destaque_sub_top">git remote</strong>
+                                - Utilizado para acessar um git remotamente. 
+                            </li>
+                             <li class="sub_top">
+                                <strong class="destaque_sub_top">git push</strong>
+                                - Salva o arquivo / atualizações no Repo do github.
+                            </li>
+                             <li class="sub_top">
+                                <strong class="destaque_sub_top">git pull</strong>
+                                - Puxa as atualizações do projeto no git, geralmente utilizado em projetos em grupo, ou buscando de outra máquina.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">git clone</strong>
+                                - Clona um repositório do GitHub, geralmente utilizado quando ingressamos em um novo projeto. 
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">git rm</strong>
+                                - Deleta o arquivo do projeto, esse comando não isola um arquivo do projeto ou monitoramento do git, o arquivo realmente é excluido.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">git log</strong>
+                                - Mostra as informações dos commits realizados no projeto. (utilizar <b>q</b> para sair do log).
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">git mv</strong>
+                                - Permite mover e alterar o nome do arquivo. Funciona de forma similar ao crt+x que tira o arquivo e deixa na memória até a fase de colar.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">git checkout</strong>
+                                - Volta ao estado anterior. Precisa tomar atenção, pois depois disso não podemos utilizar o ctrl+z. (esse comando pode ser um pouco confuso, então em uma atualização o git separou a função em <b class = "destaque_sub_top">git switch - cc</b> para criar uma nova branch e <b class="destaque_sub_top">git restore</b> para restaurar o arquivo.).
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">git reset --hard</strong>
+                                - Volta o arquivo no tempo e apaga tudo o que foi feito. Pode utilizar o id do commit da versão estável para apagar todo o restante feito a partir dali.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">gir branch</strong>
+                                - Visualiza as branchs.
+                            </li>
+                            <li class="sub_top">
+                                <strong class="destaque_sub_top">git branch (nome)</strong>
+                                - Cria um novo Branch.
+                            </li>
+
+
+                        </ul>
+                        
+            </div>
+
+        </section>
+
+        <section class="secao">
+            <div class="top_align">
+
+                <h2 class="titulo_secao">Orientações</h2>
+
+                    <ul class="lista_padrao">
+
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">Repositório</strong>
+                            - É onde o codigo vai ser armazenado (projeto).
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">.gitinore</strong>
+                            - Arquivo recomendado para informações ou pastas sensíveis que por segurança é melhor deixar fora do repositório. Podemos destacar pastas e categorias de arquivos que devem ser ignoradas pelo git.
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">Branch</strong>
+                            - É uma versão separada do projeto para fim de organização, utilizado para criações de novas features dentro do projeto sem trabalhar dentro do código main, assim isolando testes, correções e etc. Depois da nova feature ou atualização estiver estável, unificamos a branch com branch master.
+                        </li>
+                    </ul>
+
             </div>
 
         </section>
