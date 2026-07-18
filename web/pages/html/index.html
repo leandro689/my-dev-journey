@@ -92,73 +92,197 @@
 
         <section class="secao">
            
-                <div class="top_align">
-                    <h2 class="titulo_secao">Tags</h2>
+            <div class="top_align">
+                <h2 class="titulo_secao">Tags</h2>
 
                     <h3 class="topico">Tags in Line - Podem ser utilizadas dentro de blocos</h3>
 
-                    <p>
-                        <b class="sub_top">ID: </b>Elemento dentro do CSS que tem mais especificidade. Para identificação no CSS utiliza-se "#"<br>
-                        <b class="sub_top">class: </b>Diferente do ID, pode-se ter mais de uma por tag. Identificado no CSS como "."<br>
-                        <b class="sub_top">p: </b>Tag de texto in line. Algumas alterações de texto podem ser feitas dentro da tag.<br>
-                        <b class="sub_top">strong: </b>Utilizada para semântica. O código entende que o que está entre a tag ganha mais importância na leitura. Em leitores de acessibilidade, o texto é interpretado com mais ênfase.<br>
-                        <b class="sub_top">i: </b>Deixa o texto em itálico <i>Exemplo</i><br>
-                        <b class="sub_top">em: </b>Mesma lógica do strong, mas dá ênfase ao texto<br>
-                        <b class="sub_top">a: </b> Utilizada para adicionar links. Usa-se junto com o <b class="sub_top">href=" " </b>e configuração de <b class="sub_top">target</b> para definir onde o link será aberto.<br>
-                        <b class="sub_top">img: </b>Utilizada para inserir imagens.<br>
-                        <b class="sub_top">del: </b>Utilizada para remover algo do código de forma semântica. <del>Exemplo.</del><br>
-                        <b class="sub_top">ins: </b>Utilizada para inserir algo no código de forma semântica. <ins>Exemplo.</ins><br>
-                        <b class="sub_top">s: </b>Utilizada para riscar o texto. <s>Exemplo.</s><br>
-                        <b class="sub_top">u: </b>Utilizada para sublinhar o texto. <u>Sublinhar.</u><br>
-                        <b class="sub_top">small: </b>Diminuiu o texto. <small>Exemplo</small>.<br>
-                        <b class="sub_top">sup: </b>Coloca o texto acima. <sup>Exemplo</sup>.<br>
-                        <b class="sub_top">sub: </b>Coloca o texto abaixo. <sub>Exemplo</sub>.<br>
-                        <b class="sub_top">q: </b>Utilizada para citações e referências, geralmente acompanhada da tag <b class="sub_top">cite</b>.<br>
-                        <b class="sub_top">span: </b> Utilizada para formatar ou manipular textos inline, sem impactar a estrutura na página.<br>
+                    <ul class="lista_padrao">
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">ID</strong>
+                            - Elemento dentro do CSS que tem mais especificidade. Para identificação no CSS utiliza-se "#".
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">p</strong>
+                            - Tag de texto in line. Algumas alterações de texto podem ser feitas dentro da tag.
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">strong</strong>
+                            - utilizada para semântica. O código entende que o que está entre a tag ganha mais importânca na leitura. Em leitores de acessibilidade, o texto é interpretado com mais ênfase.
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">i</strong>
+                            - Tag que deixa o texto em itálico 
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">em</strong>
+                            - Mesma lógica do strong, mas dá ênfase ao texto. 
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">a</strong>
+                            - Utilziada para adicionar links. Usa-se junto com o <b>href=""</b> e configuração de <b>target</b> para definir onde o link será aberto. 
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">img</strong>
+                            - Utilizada para inserir imagens. 
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">del</strong>
+                            - Utilizada para remover algo do código de forma semântica. <del>Exemplo</del>
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">ins</strong>
+                            - Utilizada para inserir no código de forma semântica. <ins>Exemplo.</ins>
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">s</strong>
+                            - Utilizado para riscar o texto. <s>Exemplo</s>
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">u</strong>
+                            - Utilizado para sublinha o texto. <u>Exemplo</u>
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">small</strong>
+                            - Diminui o texto. <small>Exemplo</small>
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">sup</strong>
+                            - Coloca o texto acima. <sup>Exemplo</sup>.                            
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">sub</strong>
+                            - Coloca o texto abaixo <sub>Exemplo</sub>.
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">q</strong>
+                            - Utiliado para citações e referências, geralmente acompanhada a tag <b class="destaque_sub_top">cite</b>.
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">span</strong>
+                            - Utilizada para formatar ou manipular textos inline, sem impactar a estrutura na pagina.
+                        </li>
+
+
+                    </ul>
+
+                    <hr>
+                    
+                    <h3 class="topico">Tags em blocos - Ocupam toda a largura disponível e normalmente iniciam em uma nova linha.</h3>
+
+                    <ul class="lista_padrao">
+
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">blockquote</strong>
+                            - Mesma lógica da tag <b class="destaque_sub_top">q</b>, utiliza-se o atributo  <b class="destaque_sub_top">cite</b> para adicionar a referência.
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">hr</strong>
+                            - A tag cria uma linha para separar o paragráfo.
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">code</strong>
+                            - Tag utilizada para representar códigos.
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">pre</strong>
+                            - Utilizada para manter formatação original do conteúdo.
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">div</strong>
+                            - Elemento de bloco que quebra paragráfos.
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">nav</strong>
+                            - Utilizada para criar uma área de navagação com links.
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">ul</strong>
+                            - Utilizada para criar uma lista não ordenada. Para cada tótico utiliza-se <b class="destaque_sub_top">li</b>
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">ol</strong>
+                            - Lista ordenada
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">dl</strong>
+                            - Lista de descrição, as tags <b class="destaque_sub_top">dt</b> - define o termo ou nome, e <b class="destaque_sub_top">dd</b> - define a descrição, detalhe ou o valor correspondente ao termo.
+                        </li>
+
+
+                    </ul>
+
+                    <hr>
+
+                    <h3 class="topico">Separação de conteúdo - Tags utilizadas para determinar conteúdos.</h3>
+
+                    <ul class="lista_padrao">
                         
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">address</strong>
+                            - Utilizado para colocar endereços, aqueles que ficam no rodapé da página.
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">article</strong>
+                            - Utilizado para artigos em site de blogs e etc, posso utilizar també para produtos.
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">aside</strong>
+                            - Utilizada para criar uma barra lateral no site.
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">footer</strong>
+                            - Rodapé do site, o footer pode ser utilizado em outros blocos. 
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">header</strong>
+                            - Cabeçalho.
+                        </li>
+
+                    </ul>
                         
+                    <hr>
+                        
+                    <h3 class="topico">Listas</h3>
 
-                        <hr>
-                        <h3 class="topico">Tags em blocos - Ocupam toda a largura disponível e normalmente iniciam em uma nova linha.</h3>
+                    <ul class="lista_padrao">
+                        
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">ul</strong>
+                            - Utilziada para listas não ordenadas.
 
-                        <b class="sub_top">blockquote: </b>Mesma lógica da tag <b class="sub_top">q</b>, Utiliza-se o atributo <b class="sub_top">cite</b> para adicionar a referência.<br>
-                        <b class="sub_top">hr: </b>A tag cria uma linha para separar o paragráfo<br>
-                        <b class="sub_top">code: </b>Tag utilizada para representar código.<br>
-                        <b class="sub_top">pre: </b>Utilizada para manter a formatação original do conteúdo.<br>
-                        <b class="sub_top">div: </b>É um elemento de bloco que quebra o parágrafo.<br>
-                        <b class="sub_top">nav: </b> Utilizada para criar uma área de navegação com links.<br>
-                        <b class="sub_top">ul: </b>Utilizada para criar lista não ordenada. Para cada tópico utiliza-se <b class="sub_top">li</b>. <br>
+                            <p>Exemplo:</p>
 
-                        <hr>
-                        <h3 class="topico">Separação de conteúdo - Tags utilizadas para determinar conteúdos.</h3>
+                                <ul class="lista_obs">
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                </ul>
 
-                        <b class="sub_top">address:</b> Utilizado para para colocar endereços, aqueles que ficam no final da página <br>
-                        <b class="sub_top">article:</b> Utilizado para artigos em site de blogs e etc, posso utilizar também para produtos <br>
-                        <b class="sub_top">aside:</b> Barra lateral <br>
-                        <b class="sub_top">footer:</b> Rodapé do site, o footer pode ser utilizados em outros blocos<br>
-                        <b class="sub_top">header:</b> Cabeçalho do site<br>
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">ol</strong>
+                            - Lista Ordenada, diferente da <b class="destaque_sub_top">ul</b>, possui um identificador em ordem (1, 2, 3...). Pode ser alterado com atributos como o <b class="destaque_sub_top">type</b>
 
-                        <hr>
-                        <h3 class="topico">Listas</h3>
-                        <b class="sub_top">ul </b>Utilizado para listas não ordenadas.<br>
-                        <ul style="list-style-position: inside;">
-                            <li>Item 1</li>
-                            <li>Item 2</li>
-                        </ul>
-                        <b class="sub_top">ol </b>Utilizado para lista ordenada. Diferente de ul, possui um identificador de ordem (1, 2, 3...). Pode ser alterado com atributos como <b class="sub_top">type</b><br>
-                        <ol type="I" style="list-style-position: inside;">
-                            <li>item 1</li>
-                            <li>item 2</li>
-                        </ol>
-                        <b class="sub_top">dl </b>Utilizado para listas com descrição. Usa-se <b class="sub_top">dt</b> para o termo e <b class="sub_top">dd</b> para a descrição.<br>
-                        <dl>
-                            <dt>Macaco</dt>
-                            <dd>Animal super incrível</dd>
-                        </dl>
+                            <p>Exemplo:</p>
 
+                                <ol class="lista_obs">
+                                    <li>Item 1</li>
+                                    <li>Item 2</li>
+                                </ol>
+                        </li>
+                        <li class="sub_top">
+                            <strong class="destaque_sub_top">dl</strong>
+                            - Utilizada para listas com descrições. Usa-se <b class="destaque_sub_top">dt</b> para o termo e para a descrição <b class="destaque_sub_top">dd</b>
 
-
-                </div>
+                            <p>Exemplo:</p>
+                                <dl class="lista_obs">
+                                    <dt>Macaco</dt>
+                                    <dd>Animal super incrivel.</dd>
+                                </dl>
+                        </li>
+                    </ul>
+                        
+            </div>
             
         </section>
         

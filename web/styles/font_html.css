@@ -1,4 +1,4 @@
-.sub_top{
+.destaque_sub_top{
     color: #ff8c42;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
@@ -11,4 +11,23 @@
 .titulo_secao {
     color:#F16528;
     font-weight: 900;
+}
+
+.obs{
+    border-left-style: solid;
+    border-left-width: 4px;
+    border-left-color: #ff8c42;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.lista_obs{
+    border-left-style: solid;
+    border-left-width: 4px;
+    border-left-color: #ff8c42;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 4px;
+    border-radius: 10px;
+    list-style: inside;
 }
