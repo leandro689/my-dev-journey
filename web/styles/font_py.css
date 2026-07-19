@@ -6,12 +6,7 @@
 }
 
 .obs{
-    border-left-style: solid;
-    border-left-width: 4px;
     border-left-color: #3776ab;
-    background-color: rgba(0, 0, 0, 0.05);
-    padding: 4px;
-    border-radius: 10px;
 }
 
 .titulo_secao {

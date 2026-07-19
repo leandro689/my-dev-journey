@@ -14,12 +14,7 @@
 }
 
 .obs{
-    border-left-style: solid;
-    border-left-width: 4px;
     border-left-color: #ff8c42;
-    background-color: rgba(0, 0, 0, 0.05);
-    padding: 4px;
-    border-radius: 10px;
 }
 
 .lista_obs{

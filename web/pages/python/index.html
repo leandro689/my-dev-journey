@@ -383,8 +383,11 @@
                             </li>
                         </ul>
                         
-                    <h3 class="topico"> Interpolação de str (%)</h3>
-                    <p>Interpolação são formas de converter str, é utilizada em códigos antigos, o PY 3.6 utiliza mais o <b class="sub_top">(f'')</b>, utilizamos também para tratar o dado.</p>   
+                    <h3 class="topico">Interpolação de str (%)</h3>
+
+                    <p>
+                        Interpolação são formas de converter str, é utilizada em códigos antigos, o PY 3.6 utiliza mais o <b class="sub_top">(f'')</b>, utilizamos também para tratar o dado.
+                    </p>   
                     
                         <ul class="lista_padrao">
                             <li class="sub_top">
@@ -406,11 +409,13 @@
                         </ul>                
                         
                     <h3 class="topico">Índice</h3>
-                        <p>Índices, utilizamos para pegar um dado especifico de uma informação, sendo uma STR. Com o índice conseguimos, fatiar strs e exibir só o necessário.<br>
-                            
-                            <b class="sub_top">Exemplo:</b>
+                        <p>Índices, utilizamos para pegar um dado especifico de uma informação, sendo uma STR. Com o índice conseguimos, fatiar strs e exibir só o necessário.</p>
+
+                        <p class="sub_top">
+                            <strong class="destaque_sub_top">Exemplo</strong>
                         </p>
-                        <pre><code>
+                            
+                        <pre class="obs"><code>
                             nome = input('Digite seu nome: ')
                             data_n = input('Digite sua data de nascimento: ')
 
@@ -420,9 +425,8 @@
                                 f'Seu nome é "{concat[:len(nome)]}"
                                 e nasceu em "{concat[len(nome):]}"'
                             )
-                
-
                     </code></pre>
+
                     <p class="obs">
                         <b>Observação:</b> Aqui utilizamos inputs para informações, a variável concat pra juntar todas as infos fornecidas e depois utilizamos interpolação pelo f'', para fatiarmos a str. percebe-se que o fatiamento é feito dentro da função "[]". Desta forma: <b class="sub_top">[inicio da str: até onde vai]</b> Espaços vazios definem como 0. Ou seja no trecho do código, "[:len(nome)] ele conta quantas letras tem o input nome inserido e o converte em número, assim vai contar do 0 até a quantidade de caracteres existentes em nome."
                     </p>
@@ -433,8 +437,11 @@
                     <h3 class="topico">Contadores Aritméticos</h3>
                         <p>Contadores aritimeticos são utlizados para acumular ou contar valores.</p>
                         <p>Os operadores sempre vão fazer a função deles.</p>
-                        <b class="sub_top">Exemplo:</b> variável = 10, variável += 4, teremos o valor 14. Isso ocorreu por conta do acumulo aritimetico (10+4). Essas funções são muito utilizadas em laço pra agregar valor a uma variável ou mais.<br>
-                        
+
+                        <p class="obs">
+                            <b>Exemplo</b>
+                            - variável = 10, variável += 4, teremos o valor 14. Isso ocorreu por conta do acumulo aritimetico (10+4). Essas funções são muito utilizadas em laço pra agregar valor a uma variável ou mais.
+                        </p>                        
 
                         <ul class="lista_padrao">
                             <li class="sub_top">
