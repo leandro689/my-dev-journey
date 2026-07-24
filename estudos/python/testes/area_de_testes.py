@@ -82,29 +82,34 @@
 #     os.system('cls')
 #     print(numero_aleatorio)
 
-numeros = [2, 4, 6, 8]
+# numeros = [2, 4, 6, 8]
 
-while True:
-    entrada = input(f'digite um numero para adicionar na lista ou digite "sair" para sair da lista: ')
+# while True:
+#     entrada = input(f'digite um numero para adicionar na lista ou digite "sair" para sair da lista: ')
 
-    if entrada.isdigit():
-        entrada = int(entrada)
+#     if entrada.isdigit():
+#         entrada = int(entrada)
         
-        if numeros[len(numeros) - 1] < entrada:
-            numeros.append(entrada)
-            print(numeros)
-            continue
+#         if numeros[len(numeros) - 1] < entrada:
+#             numeros.append(entrada)
+#             print(numeros)
+#             continue
 
-        for i, item_lista in enumerate(numeros):
-            if entrada > item_lista and entrada < numeros[i+1]:
-                numeros.insert(i + 1, entrada)
-        print(numeros)
+#         for i, item_lista in enumerate(numeros):
+#             if entrada > item_lista and entrada < numeros[i+1]:
+#                 numeros.insert(i + 1, entrada)
+#         print(numeros)
 
-    elif entrada.lower() == 'sair':
-        print('saindo da lista, segue o que foi inserido até aqui: ')
-        print(numeros)
-        break
+#     elif entrada.lower() == 'sair':
+#         print('saindo da lista, segue o que foi inserido até aqui: ')
+#         print(numeros)
+#         break
 
-    else:
-        print('entrada invalida')
+#     else:
+#         print('entrada invalida')
+
+import secrets
+numero = secrets.randbelow(16) + 1 
+print(numero)
+
 

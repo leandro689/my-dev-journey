@@ -19,7 +19,7 @@
             <div class="head1">
                 <div>
                     <a href="../../index.html" target="_self" >
-                        <img src="../../assets/img/Program_icon.png" alt="estudos_programacao" class="logo_program">
+                        <img src="../../assets/img/Program_icon.png" alt="acessar_hub_principal" class="logo_program">
                     </a>
                 </div>
                 <div class="titulo_site">
@@ -34,22 +34,22 @@
                 <ul class="cab_ling">
                     <li class="linguagem">
                         <a href="../../pages/html/" target="_self">
-                            <img src="../../assets/img/HTML5_logo_and_wordmark.svg.png" alt="logo_html" class="logo_ling">
+                            <img src="../../assets/img/HTML5_logo_and_wordmark.svg.png" alt="acessar_hub_HTML" class="logo_ling">
                         </a>
                     </li>
                     <li class="linguagem">
                         <a href="../../pages/css/" target="_self">
-                            <img src="../../assets/img/CSS3_logo.svg.png" alt="log_css" class="logo_ling">
+                            <img src="../../assets/img/CSS3_logo.svg.png" alt="acessar_hub_CSS" class="logo_ling">
                         </a>
                     </li>
                     <li class="linguagem">
                         <a href="../../pages/python/" target="_self">
-                            <img src="../../assets/img/Python-logo-notext.svg.png" alt="logo_py" class="logo_ling">
+                            <img src="../../assets/img/Python-logo-notext.svg.png" alt="acessar_hub_PY" class="logo_ling">
                         </a>
                     </li>
                     <li class="linguagem">
                         <a href="../../pages/git/" target="_self">
-                            <img src="../../assets/img/git-icon-logo.svg" alt="logo_git" class="logo_ling">
+                            <img src="../../assets/img/git-icon-logo.svg" alt="acessar_hub_git" class="logo_ling">
                         </a>
                     </li>
                 </ul>
@@ -61,121 +61,126 @@
             <ul class="atalhos_aux">
                 <li class="item_auxiliar">
                     <a href="https://www.udemy.com/course/git-e-github-do-basico-ao-avancado-c-gist-e-github-pages/" target="_blank">
-                        <img src="../../assets/img/udemy-3.svg" alt="logo_udemy" class="logo_aux">
+                        <img src="../../assets/img/udemy-3.svg" alt="acessar_pagina_do_curso_na_Udemy" class="logo_aux">
                     </a>
                 </li>
             </ul>
         </nav>
 
-        <section class="secao">
-            <div class="top_align">
-                <h2 class="titulo_secao">Anotações</h2>
+        <main>
+
+            <section class="secao">
+                <div class="top_align">
+                    <h2 class="titulo_secao">Anotações</h2>
 
 
-                    <h3 class="topico">Comandos</h3>
+                        <h3 class="topico">Comandos</h3>
+
+                            <ul class="lista_padrao">
+
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">git status</strong>
+                                    - Mostra o status atual do git, mostra se tem arquivos para commit, se tem algum arquivo para salvar e etc.        
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">git init</strong>
+                                    - Inicia um novo projeto git.
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">git add</strong>
+                                    - Adiciona o arquivo no projeto git.
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">git add .</strong>
+                                    - Adiciona todos os arquivos dentro do projeto de uma só vez.
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">git commit</strong>
+                                    - Comita os arquivos alterados do projeto, pode se utilizar a flag "<b>-m</b>" para adicionar uma mensagem no commit (Importante comentar as alterações para você ver o que foi realizado.).
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">git commit -a</strong>
+                                    - Comita varios arquivos de uma vez.
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">git remote</strong>
+                                    - Utilizado para acessar um git remotamente. 
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">git push</strong>
+                                    - Salva o arquivo / atualizações no Repo do github.
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">git pull</strong>
+                                    - Puxa as atualizações do projeto no git, geralmente utilizado em projetos em grupo, ou buscando de outra máquina.
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">git clone</strong>
+                                    - Clona um repositório do GitHub, geralmente utilizado quando ingressamos em um novo projeto. 
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">git rm</strong>
+                                    - Deleta o arquivo do projeto, esse comando não isola um arquivo do projeto ou monitoramento do git, o arquivo realmente é excluido.
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">git log</strong>
+                                    - Mostra as informações dos commits realizados no projeto. (utilizar <b>q</b> para sair do log).
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">git mv</strong>
+                                    - Permite mover e alterar o nome do arquivo. Funciona de forma similar ao crt+x que tira o arquivo e deixa na memória até a fase de colar.
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">git checkout</strong>
+                                    - Volta ao estado anterior. Precisa tomar atenção, pois depois disso não podemos utilizar o ctrl+z. (esse comando pode ser um pouco confuso, então em uma atualização o git separou a função em <b class = "destaque_sub_top">git switch - cc</b> para criar uma nova branch e <b class="destaque_sub_top">git restore</b> para restaurar o arquivo.).
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">git reset --hard</strong>
+                                    - Volta o arquivo no tempo e apaga tudo o que foi feito. Pode utilizar o id do commit da versão estável para apagar todo o restante feito a partir dali.
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">gir branch</strong>
+                                    - Visualiza as branchs.
+                                </li>
+                                <li class="sub_top">
+                                    <strong class="destaque_sub_top">git branch (nome)</strong>
+                                    - Cria um novo Branch.
+                                </li>
+
+
+                            </ul>
+                            
+                </div>
+
+            </section>
+
+            <section class="secao">
+                <div class="top_align">
+
+                    <h2 class="titulo_secao">Orientações</h2>
 
                         <ul class="lista_padrao">
 
                             <li class="sub_top">
-                                <strong class="destaque_sub_top">git status</strong>
-                                - Mostra o status atual do git, mostra se tem arquivos para commit, se tem algum arquivo para salvar e etc.        
+                                <strong class="destaque_sub_top">Repositório</strong>
+                                - É onde o codigo vai ser armazenado (projeto).
                             </li>
                             <li class="sub_top">
-                                <strong class="destaque_sub_top">git init</strong>
-                                - Inicia um novo projeto git.
+                                <strong class="destaque_sub_top">.gitinore</strong>
+                                - Arquivo recomendado para informações ou pastas sensíveis que por segurança é melhor deixar fora do repositório. Podemos destacar pastas e categorias de arquivos que devem ser ignoradas pelo git.
                             </li>
                             <li class="sub_top">
-                                <strong class="destaque_sub_top">git add</strong>
-                                - Adiciona o arquivo no projeto git.
+                                <strong class="destaque_sub_top">Branch</strong>
+                                - É uma versão separada do projeto para fim de organização, utilizado para criações de novas features dentro do projeto sem trabalhar dentro do código main, assim isolando testes, correções e etc. Depois da nova feature ou atualização estiver estável, unificamos a branch com branch master.
                             </li>
-                             <li class="sub_top">
-                                <strong class="destaque_sub_top">git add .</strong>
-                                - Adiciona todos os arquivos dentro do projeto de uma só vez.
-                            </li>
-                             <li class="sub_top">
-                                <strong class="destaque_sub_top">git commit</strong>
-                                - Comita os arquivos alterados do projeto, pode se utilizar a flag "<b>-m</b>" para adicionar uma mensagem no commit (Importante comentar as alterações para você ver o que foi realizado.).
-                            </li>
-                             <li class="sub_top">
-                                <strong class="destaque_sub_top">git commit -a</strong>
-                                - Comita varios arquivos de uma vez.
-                            </li>
-                             <li class="sub_top">
-                                <strong class="destaque_sub_top">git remote</strong>
-                                - Utilizado para acessar um git remotamente. 
-                            </li>
-                             <li class="sub_top">
-                                <strong class="destaque_sub_top">git push</strong>
-                                - Salva o arquivo / atualizações no Repo do github.
-                            </li>
-                             <li class="sub_top">
-                                <strong class="destaque_sub_top">git pull</strong>
-                                - Puxa as atualizações do projeto no git, geralmente utilizado em projetos em grupo, ou buscando de outra máquina.
-                            </li>
-                            <li class="sub_top">
-                                <strong class="destaque_sub_top">git clone</strong>
-                                - Clona um repositório do GitHub, geralmente utilizado quando ingressamos em um novo projeto. 
-                            </li>
-                            <li class="sub_top">
-                                <strong class="destaque_sub_top">git rm</strong>
-                                - Deleta o arquivo do projeto, esse comando não isola um arquivo do projeto ou monitoramento do git, o arquivo realmente é excluido.
-                            </li>
-                            <li class="sub_top">
-                                <strong class="destaque_sub_top">git log</strong>
-                                - Mostra as informações dos commits realizados no projeto. (utilizar <b>q</b> para sair do log).
-                            </li>
-                            <li class="sub_top">
-                                <strong class="destaque_sub_top">git mv</strong>
-                                - Permite mover e alterar o nome do arquivo. Funciona de forma similar ao crt+x que tira o arquivo e deixa na memória até a fase de colar.
-                            </li>
-                            <li class="sub_top">
-                                <strong class="destaque_sub_top">git checkout</strong>
-                                - Volta ao estado anterior. Precisa tomar atenção, pois depois disso não podemos utilizar o ctrl+z. (esse comando pode ser um pouco confuso, então em uma atualização o git separou a função em <b class = "destaque_sub_top">git switch - cc</b> para criar uma nova branch e <b class="destaque_sub_top">git restore</b> para restaurar o arquivo.).
-                            </li>
-                            <li class="sub_top">
-                                <strong class="destaque_sub_top">git reset --hard</strong>
-                                - Volta o arquivo no tempo e apaga tudo o que foi feito. Pode utilizar o id do commit da versão estável para apagar todo o restante feito a partir dali.
-                            </li>
-                            <li class="sub_top">
-                                <strong class="destaque_sub_top">gir branch</strong>
-                                - Visualiza as branchs.
-                            </li>
-                            <li class="sub_top">
-                                <strong class="destaque_sub_top">git branch (nome)</strong>
-                                - Cria um novo Branch.
-                            </li>
-
-
                         </ul>
-                        
-            </div>
 
-        </section>
+                </div>
 
-        <section class="secao">
-            <div class="top_align">
+            </section>
 
-                <h2 class="titulo_secao">Orientações</h2>
+        </main>
 
-                    <ul class="lista_padrao">
-
-                        <li class="sub_top">
-                            <strong class="destaque_sub_top">Repositório</strong>
-                            - É onde o codigo vai ser armazenado (projeto).
-                        </li>
-                        <li class="sub_top">
-                            <strong class="destaque_sub_top">.gitinore</strong>
-                            - Arquivo recomendado para informações ou pastas sensíveis que por segurança é melhor deixar fora do repositório. Podemos destacar pastas e categorias de arquivos que devem ser ignoradas pelo git.
-                        </li>
-                        <li class="sub_top">
-                            <strong class="destaque_sub_top">Branch</strong>
-                            - É uma versão separada do projeto para fim de organização, utilizado para criações de novas features dentro do projeto sem trabalhar dentro do código main, assim isolando testes, correções e etc. Depois da nova feature ou atualização estiver estável, unificamos a branch com branch master.
-                        </li>
-                    </ul>
-
-            </div>
-
-        </section>
     </body>
 </html>
 
