@@ -1,10 +1,16 @@
+const sheet = workBook
+
+// Coletando Valores fornecidos para o registro de transação
+
 const data = new Date(sheet.getRange("B2").getValue() as string);
 const valor = Number(sheet.getRange("B3").getValue());
 const descricao = String(sheet.getRange("B4").getValue()).trim();
 const categoria = String(sheet.getRange("B5").getValue()).trim();
 const tipo = String(sheet.getRange("B6").getValue()).trim();
 
+// Transação denominadora de parcelas
 const parcelado = String(sheet.getRange("B7").getValue()).trim().toLowerCase();
+
 
 if (!valor || valor <= 0) {
   throw new Error("Informe um valor válido em B3.");
@@ -24,3 +30,6 @@ const parcelas = Number(sheet.getRange("B8").getValue());
 if (!parcelas || parcelas <= 0) {
   throw new Error("Informe uma quantidade de parcelas válida em B8.");
 }
+
+const data_priemira_parcela = data new Date(sheet.getRange("10").getValue() as string);
+const valor_parcela = Number(sheet.getRange("11").getValue());

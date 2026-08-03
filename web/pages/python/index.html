@@ -10,9 +10,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content ="width=device-width, initial-scale= 1.0"> 
         <title>Estudos Python</title>
-        <style>
 
-        </style>
     </head>
     <body>
         <header id="menu_estudos">
@@ -72,7 +70,7 @@
 
         <main>
 
-            <section class="secao">
+            <section class="secao"> <!--Seção de anotações-->
                 
                 <div class="top_align">
                     <h2 class="titulo_secao">Anotações</h2>
@@ -208,7 +206,7 @@
                                     - utilizado para converter todas as letras de uma str em minúsculo.
                                 </li>
                                 <li class="sub_top">
-                                    <strong class="destaque_sub_top">.starswith()</strong>
+                                    <strong class="destaque_sub_top">.startswith()</strong>
                                     - Verifica como começa o objeto selecionado.
                                 </li>
                                 <li class="sub_top">
@@ -244,12 +242,12 @@
                                     - Utiliza-se para fatiar uma str por um caracter especifico, na maioria das vezes sendo frases. Pode utilizar o R 
                                 </li>
                                 <li class="sub_top">
-                                    <strong class="destaque_sub_top">.sprit(r ou l)</strong>
+                                    <strong class="destaque_sub_top">.strip(r ou l)</strong>
                                     - Utilizado para remover espaços do começo ou do final de uma str. Utiliza r ou l para definir qual lado queremos atuar.
                                 </li>
                                 <li class="sub_top">
                                     <strong class="destaque_sub_top">.join()</strong>
-                                    - Utilizamos para separar objetos iteráveis. 
+                                    - Utilizamos para unir objetos iteráveis com um caracter determinado entre eles. 
                                 </li>
                                 <li class="sub_top">
                                     <strong class="destaque_sub_top">.replace(o que vai substituir, substituir por)</strong>
@@ -325,7 +323,7 @@
                                     - Utilizado para converter o dado para o tipo Boleano
                                 </li>
                                 <li class="sub_top">
-                                    <strong class="destaque_sub_top">range(star, stop, step)</strong>
+                                    <strong class="destaque_sub_top">range(start, stop, step)</strong>
                                     - utilizado para fazer o código correr uma certo periodo de algum objeto ou valor. Star - onde começa. Stop - onde para. Stet - pra determinar de quanto em quanto.
                                 </li>
                             </ul>
@@ -522,7 +520,7 @@
 
             </section>
             
-            <section class="secao">
+            <section class="secao"> <!--Seção de exercicios-->
                 <div class="top_align">
                     <h2 class="titulo_secao">Exercicios</h2>
                     
@@ -695,8 +693,9 @@
 
                         <h3 class="topico">Exercicio de Índices - trabalhando com letras</h3>
                             <div>
-                                <p>Programa com entrada de nome e data de nascimento, inverte o nome, fala se contem espaços, número de letras.<br>
-                                <b>Version with "or":</b></p>
+                                <p>Programa com entrada de nome e data de nascimento, inverte o nome, fala se contem espaços, número de letras.</p>
+
+                                <p><b>Minha versão com "or":</b></p>
                                 <pre><code>
                                     nome_usuario = input('Diga seu nome: ')
                                     idade_usuario = input('Diga sua idade: ')
@@ -727,7 +726,7 @@
                                             print(f'A ultima letra do seu nome é \'{nome_usuario[-1]}\'')
 
                                 </code></pre>
-                                <p><b>Version with "and" - Teacher version's:</b></p>
+                                <p><b>Versão com "and" - Versão do professor</b></p>
                                 <pre><code>
                                     nome = input('Digite seu nome: ')
                                     idade = input('Digite sua idade:')
@@ -1136,10 +1135,13 @@
                                             print("Você não digitou nenhuma função valida")
 
                                 </code></pre>
-                                <p class="obs">
-                                    <b>Observação: </b>Programa com laços de while e validações com if e else, todas as entradas foram convertidas para lower para não ter divergencia de entrada, validação de entradas invalidas caso não forem as entradas permitidas no programa.<br>
-                                    <b>Dificuldades: </b>Durante a codagem, fui criando as variáveis fora do while para me organizar, tive um feedback de que as variáveis fora do while não seriam necessárias. Pontos de melhoria - limpeza de cod, organizção de variáveis.
-                                </p>
+
+                                <div class="obs">
+                                   
+                                    <p><b>Observação: </b>Programa com laços de while e validações com if e else, todas as entradas foram convertidas para lower para não ter divergencia de entrada, validação de entradas invalidas caso não forem as entradas permitidas no programa.</p>
+                                    <p><b>Dificuldades: </b>Durante a codagem, fui criando as variáveis fora do while para me organizar, tive um feedback de que as variáveis fora do while não seriam necessárias. Pontos de melhoria - limpeza de cod, organizção de variáveis.</p>
+                                    
+                                </div>
                             </div>
                     
                     </article>
@@ -1277,10 +1279,10 @@
                                                 print('Digite uma opção valida')
                                 </code></pre>
 
-                                <p class="obs">
-                                    <b>Observação: </b>Programa codado para simular um jogo da forca, utilizado variáveis de controle para saídas e entradas no while, tenho tentado efetuar esse controle na maioria dos programas e exercicios que tenho criado para implementação em outros programas, sem a necessidade de ficar apertando code runner do vscode.<br>
-                                    <b>Dificuldades: </b>Durante a criação do algoritmo, travei bastante no for, estava tentando mutar uma str ao invés de cirar uma nova. Ainda estou tendo um pouco de dificuldade em continues e breaks, mas tenho melhorado minha velocidade de codagem
-                                </p>
+                                <div class="obs">
+                                    <p><b>Observação: </b>Programa codado para simular um jogo da forca, utilizado variáveis de controle para saídas e entradas no while, tenho tentado efetuar esse controle na maioria dos programas e exercicios que tenho criado para implementação em outros programas, sem a necessidade de ficar apertando code runner do vscode.</p>
+                                    <p><b>Dificuldades: </b>Durante a criação do algoritmo, travei bastante no for, estava tentando mutar uma str ao invés de cirar uma nova. Ainda estou tendo um pouco de dificuldade em continues e breaks, mas tenho melhorado minha velocidade de codagem.</p>
+                                </div>
                             </div>
                     
                     </article>
@@ -1378,10 +1380,11 @@
                                             print('Opção invalida')
 
                                 </code></pre>
-                                <p class="obs">
-                                    <b>Observação: </b>Utilizado lista para inputar as notas e guardar as informações, utilizado sistema de consolidação para efetuar a media da nota. Aplicativo deixa inputar somente numeros.<br>
-                                    <b>Dificuldades: </b>Aqui não tive dificuldades consideraveis como os outros códigos, anotado para mostrar evolução.
-                                </p>
+
+                                <div class="obs">
+                                    <p><b>Observação: </b>Utilizado lista para inputar as notas e guardar as informações, utilizado sistema de consolidação para efetuar a media da nota. Aplicativo deixa inputar somente numeros.</p>
+                                    <p><b>Dificuldades: </b>Aqui não tive dificuldades consideraveis como os outros códigos, anotado para mostrar evolução.</p>
+                                </div>
                             </div>
         
                     </article>
@@ -1390,7 +1393,7 @@
                     
             </section>
 
-            <section class="secao">
+            <section class="secao"> <!--Seção de pontos de atenção-->
                 <div class="top_align">
                     <h2 class="titulo_secao">Pontos de atenção</h2>
                         <h3 class="topico">Código limpo</h3>

@@ -108,8 +108,15 @@
 #     else:
 #         print('entrada invalida')
 
-import secrets
-numero = secrets.randbelow(16) + 1 
-print(numero)
+# multiplicar = (2, 2, 3, 4, 5)
+# total = multiplicar[0]
 
+# for item, numero in enumerate(multiplicar):
+
+#     if item > 0:
+#         total *= numero
+
+# print(total)
+
+# print(2*2*3*4*5)
 
